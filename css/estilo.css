@@ -1,0 +1,105 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+body {
+	background-color:#000;
+	background-image: url(../_img/background.jpg);
+	background-size: 100%;
+
+	font-family: Verdana, Arial, Helvetica, sans-serif; ;
+}
+
+p {
+	color:#fff;
+	text-align: center;
+	margin-top: 2%;
+	font-size: 80%;
+}
+
+#facebook {
+	width:10%;
+	margin-left:8%;
+	margin-right:5%;
+}
+
+#gmail {
+	width:8.5%;
+	margin-right:5%;
+}
+
+#github {
+	width:9%;
+	margin-right:5%;
+}
+
+#linkedin {
+	width:10%;
+	margin-right: 5%;
+}
+
+#lattes {
+	width:7%;
+	margin-right: 5%;
+}
+
+#cv {
+	width:8%;
+	border-radius:150px;
+	background-color: #fff;
+}
+
+#apresentacao {
+	margin-top:18%;
+	padding:1%;
+	width: 98%;
+}
+
+#contatos {
+	border-radius: 15px;
+	margin-top:13%;
+	margin-left:20%;
+	width: 60%;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+
+#contatos, #apresentacao{
+	background-color: #FF0000;
+	background-color: rgba(255,255,255,.1);
+}
+
+#apresentacao h1, #apresentacao h3 {
+	text-align: center;
+	color: #eee;
+}
+
+h1 {
+	font-size: 450%;
+	-webkit-transition-duration: 3.10s;
+}
+
+h1:hover {
+	-webkit-transition-duration: 1.90s;
+	-webkit-filter: drop-shadow(3px 3px 25px green);
+}
+
+h3 {
+	font-weight: lighter;
+	font-size: 180%;
+}
+
+.container{
+	position: relative;
+}
+
+.logo {
+	vertical-align: middle;
+	-webkit-transition-duration: .90s;
+}
+
+.logo:hover {
+	-webkit-transition-duration: .90s;
+	-webkit-filter: grayscale(100%);
+}
