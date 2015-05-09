@@ -7,14 +7,7 @@ body {
 	background-color:#000;
 	background-image: url(../_img/background.jpg);
 	background-size: 99%;
-	font-family: Verdana, Arial, Helvetica, sans-serif; ;
-}
-
-p {
-	color:#fff;
-	text-align: center;
-	margin-top: 2%;
-	font-size: 80%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 #facebook {
@@ -45,7 +38,7 @@ p {
 
 #cv {
 	width:8%;
-	border-radius:150px;
+	border-radius:360px;
 	background-color: #fff;
 }
 
