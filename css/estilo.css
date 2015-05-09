@@ -6,8 +6,7 @@
 body {
 	background-color:#000;
 	background-image: url(../_img/background.jpg);
-	background-size: 100%;
-
+	background-size: 99%;
 	font-family: Verdana, Arial, Helvetica, sans-serif; ;
 }
 
@@ -51,7 +50,7 @@ p {
 }
 
 #apresentacao {
-	margin-top:17.5%;
+	margin-top:17%;
 	padding:1%;
 	width: 98%;
 }
