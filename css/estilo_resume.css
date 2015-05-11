@@ -1,18 +1,28 @@
 /*Based on HTML5 model of Allan Smith*/
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
-border:0;
-font:inherit;
-font-size:100%;
-margin:0;
-padding:0;
-vertical-align:baseline;
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,
+b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+	border:0;
+	font:inherit;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-display:block;
+	display:block;
 }
 
-html, body {background-image: url(../images/code.jpg); background-color:#000; background-repeat: no-repeat;background-size: 100%; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+html, body {
+	background-image: url(../images/code.jpg); 
+	background-color:#000; 
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	font-family: 'Lato', helvetica, arial, sans-serif; 
+	font-size: 16px; color: #222;
+}
 
 .clear {clear: both;}
 
@@ -101,6 +111,9 @@ p {
 	color: #1CAD55;
 }
 
+#cursos {
+	page-break-before: always;
+}
 
 section {
 	border-top: 1px solid #dedede;
@@ -170,9 +183,9 @@ section:last-child {
 	}
 	
 	.keySkills {
-	-moz-column-count:2;
-	-webkit-column-count:2;
-	column-count:2;
+		-moz-column-count:2;
+		-webkit-column-count:2;
+		column-count:2;
 	}
 }
 
@@ -239,6 +252,7 @@ section:last-child {
 @media print {
     #cv {
         width: 100%;
+        font-size: 80%;
     }
 }
 

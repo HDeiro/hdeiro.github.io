@@ -74,7 +74,7 @@ h1 {
 
 h1:hover {
 	-webkit-transition-duration: 1.90s;
-	-webkit-filter: drop-shadow(3px 3px 25px green);
+	-webkit-filter: drop-shadow(3px 3px 30px #1CAD55);
 }
 
 h3 {
