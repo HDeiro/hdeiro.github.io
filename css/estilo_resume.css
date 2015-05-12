@@ -47,9 +47,8 @@ p {
 }
 
 #name h1 {
-	font-size: 1.6em;
-	font-weight: 700;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.8em;
+	font-family: Lobster, Verdana;
 	margin-bottom: -6px;
 }
 
@@ -57,7 +56,7 @@ p {
 	font-size: 1.0em;
 	margin-left: 2px;
 	margin-top:10px;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: Play, Verdana;
 }
 
 #mainArea {
@@ -111,10 +110,6 @@ p {
 	color: #1CAD55;
 }
 
-#cursos {
-	page-break-before: always;
-}
-
 section {
 	border-top: 1px solid #dedede;
 	padding: 20px 0 0;
@@ -139,9 +134,9 @@ section:last-child {
 }
 
 .sectionTitle h1 {
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: Play;
 	font-size: 1.2em;
-	font-weight: 100;
+	font-weight: 200;
 	color: #1CAD55;
 }
 
@@ -254,6 +249,71 @@ section:last-child {
         width: 100%;
         font-size: 80%;
     }
+
+	#contactDetails ul {
+		font-size: 1em;
+		margin-top:15px;
+	}
+
+	#contactDetails ul li {
+		text-align: center;
+		margin-top:3px;
+	}
+
+	#name h1 {
+		font-size: 2.2em;
+		font-weight: 100;
+	}
+
+	#mainArea {
+		width: 100%;
+		margin: 0%;
+		padding: 0%;
+	}
+
+	#mainArea .sectionTitle {
+		margin-top: -2%;
+	}
+
+	#mainArea .sectionTitle h1 {
+		margin-bottom: 6px;
+	}
+
+	#mainArea .sectionContent {
+		text-align: justify;
+		margin-bottom: 8px;
+	}
+
+	section .sectionContent .keySkills {
+		list-style: disc;
+		margin-left: 6%;
+	}
+
+	section .sectionTitle {
+		margin-bottom: 10px;
+	}
+
+	section .sectionContent article h2 {
+		margin-bottom: 2px;
+	}
+
+	.lista {
+		margin-top: -4%;
+		width:45%;
+		border-top: 0;
+	}
+
+	#l1 {
+		float:left;
+	}
+
+	#l2 {
+		float:right;
+	}
+
+	#realizacoes {
+		clear:both;
+	}
 }
 
 @-webkit-keyframes reset {
