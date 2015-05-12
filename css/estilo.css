@@ -105,3 +105,57 @@ h3 {
 	-webkit-transition-duration: .90s;
 	-webkit-filter: grayscale(100%);
 }
+
+@media all and (min-width: 602px) and (max-width: 800px) {
+	#contatos {
+		width:100%;
+		margin:0%;
+		padding:0%;
+	}
+
+	.logo {
+		margin:0%;
+		padding:0%;
+		display:block;
+		width: 400%;
+	}
+}
+
+@media all and (max-width: 601px) {
+	#contatos {
+		width:400%;
+		margin:0%;
+		padding:0%;
+	}
+
+	.logo {
+		display:block;
+		margin-bottom: 5%;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#apresentacao h1 {
+		font-size: 300%;
+	}
+
+	#apresentacao h3 {
+		font-size: 60%;
+	}
+
+	#contatos {
+		width:100%;
+		text-align: center;
+	}
+
+	#facebook, #gmail, #github, #linkedin, #lattes, #cv {
+		width:50%;
+		display:block;
+		margin-left: 25%;
+	}
+
+	#facebook, #linkedin {
+		width:60%;
+		margin-left:20%;
+	}
+}
