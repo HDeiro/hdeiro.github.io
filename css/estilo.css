@@ -12,28 +12,23 @@ body {
 
 #facebook {
 	width:10%;
-	margin-left:8%;
-	margin-right:5%;
+	margin-left:10%;
+	margin-right:8%;
 }
 
 #gmail {
 	width:8.5%;
-	margin-right:5%;
+	margin-right:8.5%;
 }
 
 #github {
 	width:9%;
-	margin-right:5%;
-}
-
-#linkedin {
-	width:10%;
-	margin-right: 5%;
+	margin-right:9%;
 }
 
 #lattes {
 	width:7%;
-	margin-right: 5%;
+	margin-right: 9%;
 }
 
 #cv {
@@ -59,17 +54,24 @@ body {
 
 #contatos, #apresentacao{
 	background-color: #FF0000;
-	background-color: rgba(255,255,255,.1);
+	background-color: rgba(255,255,255,.2);
 }
 
 #apresentacao h1, #apresentacao h3 {
 	text-align: center;
-	color: #eee;
+}
+
+#apresentacao h1 {
+	color: #DD4444;
+}
+
+#apresentacao h3 {
+	color: #440000;
 }
 
 #apresentacao h1 {
 	font-family: Lobster;
-	font-size: 600%;
+	font-size: 700%;
 	font-weight: normal;
 }
 
@@ -106,6 +108,11 @@ h3 {
 	-webkit-filter: grayscale(100%);
 }
 
+.logopb:hover {
+	-webkit-transition-duration: 1s;
+	-webkit-filter: invert(60%);	
+}
+
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#contatos {
 		width:100%;
@@ -132,30 +139,55 @@ h3 {
 		display:block;
 		margin-bottom: 5%;
 	}
+
+	#contatos {
+		width:100%;
+		text-align: center;
+		border-radius: 0px;
+		padding-bottom: 3%;
+	}
+
+	#facebook, #gmail, #github, #lattes, #cv {
+		width:40%;
+		display:block;
+		margin-left: 30%;
+		margin-bottom:10%;
+	}
+
+	#facebook {
+		width:50%;
+		margin-left:25%;
+		margin-bottom:10%;
+	}
 }
 
 @media all and (max-width: 480px) {
 	#apresentacao h1 {
-		font-size: 300%;
+		font-size: 400%;
+		margin-top:0%;
 	}
 
 	#apresentacao h3 {
-		font-size: 60%;
+		display: none;
 	}
 
 	#contatos {
 		width:100%;
 		text-align: center;
+		border-radius: 0px;
+		padding-bottom: 3%;
 	}
 
-	#facebook, #gmail, #github, #linkedin, #lattes, #cv {
-		width:50%;
+	#facebook, #gmail, #github, #lattes, #cv {
+		width:40%;
 		display:block;
-		margin-left: 25%;
+		margin-left: 30%;
+		margin-bottom:10%;
 	}
 
-	#facebook, #linkedin {
-		width:60%;
-		margin-left:20%;
+	#facebook {
+		width:50%;
+		margin-left:25%;
+		margin-bottom:10%;
 	}
 }
