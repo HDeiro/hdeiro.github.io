@@ -62,11 +62,13 @@ body {
 }
 
 #apresentacao h1 {
-	color: #DD4444;
+   background: -webkit-linear-gradient(#808000, #D2691E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #apresentacao h3 {
-	color: #440000;
+	color: #430000;
 }
 
 #apresentacao h1 {
@@ -86,7 +88,7 @@ h1 {
 
 h1:hover {
 	-webkit-transition-duration: 1.90s;
-	-webkit-filter: drop-shadow(3px 3px 30px #1CAD55);
+	-webkit-filter: drop-shadow(3px 3px 40px #430000);
 }
 
 h3 {
