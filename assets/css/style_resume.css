@@ -91,6 +91,7 @@ img {
 	height: auto;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
+	max-height: 85px;
 }
 
 #name {

@@ -17,13 +17,13 @@ body {
 }
 
 ::-moz-selection { /* Code for Firefox */
-    color: #eeeeee;
-    background: #444444;
+    color:#1A3F4F;
+    background: #FEFDFB;
 }
 
 ::selection {
-    color: #eeeeee;
-    background: #444444;
+    color:#1A3F4F;
+    background: #FEFDFB;
 }
 
 img {
@@ -99,7 +99,7 @@ img {
 }
 
 #menuTitle {
-  color: #ffffff;
+  color: #FEFDFB;
   margin-top: 0.2%;
   font-size: 200%;
   font-family: Lobster;
