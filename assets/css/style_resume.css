@@ -16,11 +16,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 }
 
 html, body {
-	background-image: url(../images/code.jpg); 
-	background-color:#000; 
+	background-image: url(../img/matrix.jpg);
+	background-color:#000;
 	background-repeat: no-repeat;
-	background-size: 100%; 
-	font-family: 'Lato', helvetica, arial, sans-serif; 
+	background-size: 100%;
+	font-family: 'Lato', helvetica, arial, sans-serif;
 	font-size: 16px; color: #222;
 }
 
@@ -33,7 +33,24 @@ p {
 	color: #444;
 }
 
-#cv { 
+::-moz-selection { /* Code for Firefox */
+    color: #1CAD55;
+    background: rgba(243,243,243,.9);
+}
+
+::selection {
+    color: #1CAD55;
+    background: rgba(243,243,243,.9);
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+}
+
+#cv {
 	width: 90%;
 	max-width: 800px;
 	background-color: rgba(243,243,243,.9);
@@ -97,7 +114,7 @@ p {
 }
 
 #contactDetails ul li a, a[href^=tel] {
-	color: #444; 
+	color: #444;
 	text-decoration: none;
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
@@ -106,7 +123,7 @@ p {
 	transition: all .3s ease-in;
 }
 
-#contactDetails ul li a:hover { 
+#contactDetails ul li a:hover {
 	color: #1CAD55;
 }
 
@@ -176,7 +193,7 @@ section:last-child {
 	#foto {
 		display: none;
 	}
-	
+
 	.keySkills {
 		-moz-column-count:2;
 		-webkit-column-count:2;
@@ -190,27 +207,27 @@ section:last-child {
 		margin: 10px auto;
 		min-width: 280px;
 	}
-	
+
 	#foto {
 		display: none;
 	}
-	
+
 	#name, #contactDetails {
 		float: none;
 		width: 100%;
 		text-align: center;
 	}
-	
+
 	.sectionTitle, .sectionContent {
 		float: none;
 		width: 100%;
 	}
-	
+
 	.sectionTitle {
 		margin-left: -2px;
 		font-size: 1.25em;
 	}
-	
+
 	.keySkills {
 		-moz-column-count:2;
 		-webkit-column-count:2;
@@ -222,22 +239,22 @@ section:last-child {
 	.mainDetails {
 		padding: 15px 15px;
 	}
-	
+
 	section {
 		padding: 15px 0 0;
 	}
-	
+
 	#mainArea {
 		padding: 0 25px;
 	}
 
-	
+
 	.keySkills {
 	-moz-column-count:1;
 	-webkit-column-count:1;
 	column-count:1;
 	}
-	
+
 	#name h1 {
 		line-height: .8em;
 		margin-bottom: 4px;
@@ -383,11 +400,11 @@ section:last-child {
     -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in;
-	
+
 	-moz-animation-name: reset, fade-in;
     -moz-animation-duration: 1.5s;
     -moz-animation-timing-function: ease-in;
-	
+
 	animation-name: reset, fade-in;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
@@ -397,16 +414,16 @@ section:last-child {
     -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 2.5s;
     -webkit-animation-timing-function: ease-in;
-	
+
 	-moz-animation-name: reset, fade-in;
     -moz-animation-duration: 2.5s;
     -moz-animation-timing-function: ease-in;
-	
+
 	animation-name: reset, fade-in;
     animation-duration: 2.5s;
     animation-timing-function: ease-in;
 }
- 
+
 .delayOne {
 	-webkit-animation-delay: 0, .5s;
 	-moz-animation-delay: 0, .5s;
