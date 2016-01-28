@@ -26,6 +26,10 @@ html, body {
 
 .clear {clear: both;}
 
+.description {
+	font-size: 90%;
+}
+
 p {
 	font-size: 1em;
 	line-height: 1.4em;
@@ -263,6 +267,13 @@ section:last-child {
 }
 
 @media print {
+	#right {
+		float:right;
+	}
+
+	#left {
+		float:left;
+	}
     #cv {
         width: 100%;
         font-size: 80%;
@@ -316,17 +327,15 @@ section:last-child {
 	}
 
 	.lista {
-		margin-top: -4%;
-		width:45%;
-		border-top: 0;
+		margin-top: -3%;
+		width:100%;
+		border-top: 0; 
+		margin-bottom: -1%;
 	}
 
-	#l1 {
-		float:left;
-	}
-
-	#l2 {
-		float:right;
+	#l2{ 
+		margin-top: 1%;
+		border-top: 1px solid #dedede;
 	}
 
 	#realizacoes {
