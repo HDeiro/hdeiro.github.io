@@ -1,0 +1,44 @@
+body {
+    font-size: $default-fs;
+    font-family: $primary-font;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    @extend %flexbox;
+    padding-bottom: 30px;
+    
+    .content {
+        width: 60vw;
+    }
+
+    .title {
+        font-size: 2em;
+        font-family: $secondary-font;
+        color: $color-featured;
+    }
+}
+
+@media (max-width: 700px) { 
+    section .content {
+        width: 90vw;
+    }
+}
+
+.divider {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+
+%flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

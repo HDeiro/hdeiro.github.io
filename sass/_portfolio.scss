@@ -1,0 +1,43 @@
+.portfolio {
+    .items {
+        @extend %flexbox;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        @extend %flexbox;
+        margin: 10px 5px;
+        flex-direction: row;
+        cursor: pointer;
+
+        svg {
+            fill: $color-featured;
+            padding-right: 10px;
+            border-right: 2px solid $color-featured;
+            margin-right: 10px;
+        }
+
+        span {
+            @extend %flexbox;
+            align-items: flex-start;
+            color: $color-text;
+            width: 100%;
+        }
+        .itemname {
+            font-size: 1.2em;
+            color: $color-featured;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    
+    @media (max-width: 700px) { 
+        .items {
+            flex-direction: column;
+            align-items: flex-start;
+        } 
+    }
+
+}

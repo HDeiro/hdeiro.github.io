@@ -1,0 +1,48 @@
+.skills {
+    background-color: $color-bg-divisor;
+    padding-bottom: 50px;
+    
+    .title {
+        text-align: center;
+    }
+
+    .content {
+        @extend %flexbox;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .dev, .others {
+        width: 48%;
+    }
+    
+    .skillset {
+        @extend %flexbox;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }   
+
+    .skill {
+        font-size: 1.2em;
+        padding:6px;
+        margin: 3px;
+        border-radius: 3px;
+        cursor: default;
+    }
+    
+    @media (max-width: 700px) { 
+        .dev, .others {
+            width: 100%;
+        }
+
+        .content {
+            flex-direction: column;
+        }
+        
+        .title {
+            text-align: left;
+        }
+    }
+
+}
