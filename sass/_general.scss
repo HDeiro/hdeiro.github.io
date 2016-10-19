@@ -10,7 +10,7 @@ a {
 
 section {
     @extend %flexbox;
-    padding-bottom: 30px;
+    padding: 60px 0;
     
     .content {
         width: 60vw;
@@ -19,7 +19,8 @@ section {
     .title {
         font-size: 2em;
         font-family: $secondary-font;
-        color: $color-featured;
+        color: $color-featured-satured;
+        margin-top: 0;
     }
 }
 
@@ -27,14 +28,17 @@ section {
     section .content {
         width: 90vw;
     }
+
+    .divider {
+       height: 200px !important;
+    }
 }
 
 .divider {
     background-size: cover;
     background-attachment: fixed;
-    height: 50vh;
+    height: 300px;
 }
-
 
 %flexbox {
     display: flex;

@@ -9,4 +9,5 @@ $color-primary: black;
 $color-primary-contrast: white;
 $color-text: #555;
 $color-bg-divisor: #eee;
-$color-featured: green;
+$color-featured: #4b5f83;
+$color-featured-satured: saturate($color-featured, 40%);

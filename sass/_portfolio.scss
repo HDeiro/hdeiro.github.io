@@ -11,12 +11,17 @@
         margin: 10px 5px;
         flex-direction: row;
         cursor: pointer;
+        transition: transform 200ms ease-in-out;
 
         svg {
+            transition: fill 200ms ease-in-out;
             fill: $color-featured;
-            padding-right: 10px;
-            border-right: 2px solid $color-featured;
             margin-right: 10px;
+        }
+
+        .wrapper {
+            border-left: 2px solid $color-featured;       
+            padding-left: 10px;
         }
 
         span {
@@ -25,11 +30,25 @@
             color: $color-text;
             width: 100%;
         }
+
         .itemname {
             font-size: 1.2em;
             color: $color-featured;
             text-transform: uppercase;
             font-weight: bold;
+            transition: color 200ms ease-in-out;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+
+            .itemname {
+                color: $color-featured-satured;
+            }
+
+            svg {
+                fill: $color-featured-satured;
+            }
         }
     }
     

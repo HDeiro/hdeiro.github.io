@@ -16,6 +16,7 @@
     }
 
     .title {
+        text-shadow: 0 0 30px $color-featured;
         font-size: 3em;
         color: $color-primary-contrast;
         font-family: $secondary-font;
@@ -26,7 +27,7 @@
         color: $color-primary-contrast;
         line-height: 1em;
         text-align: center;
-        padding: 0 20px;
+        padding: 20px;
     }
 
     .social-networks {
@@ -37,17 +38,16 @@
         justify-content: space-between;
         width: 200px;
         height: $social-icon-size;
-        padding-top: 20px;
+        padding: 20px;
         overflow: hidden;
 
         svg {
             width: $social-icon-size;
-            fill: $color-primary-contrast;
-            transition: fill 200ms ease-in-out;
-            will-change: fill;
+            transition: transform 200ms ease-in-out;
+            will-change: scale;
 
             &:hover {
-                fill: $color-featured;
+                transform: scale(1.3);
             }
         }
     }

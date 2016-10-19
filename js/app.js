@@ -120,10 +120,10 @@ var devskills = [
 var otherskills = [
     {name: "Inglês", color: "white", bg: "#875346"},
     {name: "CorelDRAW", color: "white", bg: "#61A706"},
-    {name: "Boa interpessoalidade", color: "white", bg: "#9317C1"},
+    {name: "Interpessoalidade", color: "white", bg: "#9317C1"},
     {name: "Curiosidade", color: "white", bg: "#FCB525"},
-    {name: "Boa oralidade", color: "white", bg: "#3382C7"},
-    {name: "Boa escrita", color: "white", bg: "#003E06"},
+    {name: "Oralidade", color: "white", bg: "#3382C7"},
+    {name: "Escrita", color: "white", bg: "#003E06"},
     {name: "Organização", color: "white", bg: "#DF651B"},
     {name: "Criatividade", color: "white", bg: "#EF02BB"},
     {name: "Good Player!", color: "white", bg: "#C80432"},
@@ -158,9 +158,40 @@ var portfolio = [
 
 portfolio.forEach(function(item) {
     var type = item.type.indexOf("Site") > -1 ? site : mobile;
-    other.innerHTML += "<a href='"+item.url+"' target='_blank'><div class='item'><i class='fadein delay-1'>"+type+"</i><span class='slideleft'><span class='itemname'>"+item.name+"</span>"+item.type+"</span></div></a>" 
+    other.innerHTML += "<a href='"+item.url+"' target='_blank'><div class='item'><i class='fadein delay-1'>"+type+"</i><span class='slideleft'><span class='wrapper'><span class='itemname'>"+item.name+"</span>"+item.type+"</span></span></div></a>" 
 });
 
 /**
  * Lock Animations from scroll
  */
+
+window.onscroll = verifyAnimation;
+window.onresize = verifyAnimation;
+window.onload = verifyAnimation;
+
+var windowWidth = window.innerWidth;
+var isMobile = windowWidth < 600;
+
+if(isMobile) {
+	var elements = Array.from(document.querySelectorAll('.rem-on-mobile'));
+	
+	elements.forEach(function(element) {
+		element.classList.remove('rem-on-mobile');
+		element.classList.remove('no-animation');
+	});
+}
+
+function verifyAnimation() {
+	//Captura todos elementos cuja animação esteja bloqueada
+	var elements = Array.from(document.querySelectorAll('.no-animation'));
+
+	elements.forEach(function(element) {
+		//Captura o boundingbox de cada elemento
+		var bounds = element.getBoundingClientRect();
+
+		//Se o elemento estiver acima do fundo da window, remove a classe no-animation, liberando a animação
+		if(bounds.top * (isMobile ? 0.8 : 0.9) < window.innerHeight){
+			element.classList.remove('no-animation');
+		}
+	});
+}
