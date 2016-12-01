@@ -60,11 +60,7 @@
         align-items: center;
         justify-content: center;
     }
-
-    .itemlink {
-        width: 30%;
-    }
-
+    
     @media (max-width: 700px) { 
         .items {
             flex-direction: column;
