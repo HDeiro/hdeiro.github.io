@@ -1,9 +1,10 @@
 .portfolio {
+    position:relative;
+    
     .items {
         @extend %flexbox;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .item {
@@ -52,6 +53,18 @@
         }
     }
     
+    .icon {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .itemlink {
+        width: 30%;
+    }
+
     @media (max-width: 700px) { 
         .items {
             flex-direction: column;

@@ -94,6 +94,7 @@ var devskills = [
     {name: "SASS", color: "white", bg: "#C6538C"},
     {name: "JavaScript", color: "white", bg: "#DAA520"},
     {name: "AngularJS", color: "white", bg: "#B52E31"},
+    {name: "TypeScript", color: "white", bg: "#294E80"},
     {name: "Ionic", color: "white", bg: "#296AD4"},
     {name: "Phonegap", color: "white", bg: "#999999"},
     {name: "Cordova", color: "white", bg: "#BFBFBF"},
@@ -152,13 +153,15 @@ var site = "<?xml version='1.0' encoding='utf-8'?><svg version='1.1' xmlns='http
 
 var portfolio = [
     {name: "Teles TI", type: "Site", url: "http://telesti.com.br/"},
-    {name: "AuraBrasil", type: "Aplicativo (via IWWA)", url: "https://play.google.com/store/apps/details?id=com.aurabrasil.app&hl=pt_BR"},
-    {name: "IAF", type: "Aplicativo (via IWWA)", url: "https://play.google.com/store/apps/details?id=br.org.iaf&hl=pt_BR"},
+    {name: "AuraBrasil", type: "App Android (via IWWA)", url: "https://play.google.com/store/apps/details?id=com.aurabrasil.app&hl=pt_BR"},
+    {name: "AuraBrasil", type: "App iOS (via IWWA)", url: "https://itunes.apple.com/br/app/aurabrasil/id1108525914?mt=8"},
+    {name: "IAF", type: "App Android (via IWWA)", url: "https://play.google.com/store/apps/details?id=br.org.iaf&hl=pt_BR"},
+    {name: "IAF", type: "App iOS (via IWWA)", url: "https://itunes.apple.com/br/app/iaf-instituto-dos-auditores/id1137215515?mt=8"},
 ];
 
 portfolio.forEach(function(item) {
     var type = item.type.indexOf("Site") > -1 ? site : mobile;
-    other.innerHTML += "<a href='"+item.url+"' target='_blank'><div class='item'><i class='fadein delay-1'>"+type+"</i><span class='slideleft'><span class='wrapper'><span class='itemname'>"+item.name+"</span>"+item.type+"</span></span></div></a>" 
+    other.innerHTML += "<a href='"+item.url+"' target='_blank' class='itemlink'><div class='item'><i class='icon fadein delay-1'>"+type+"</i><span class='slideleft'><span class='wrapper'><span class='itemname'>"+item.name+"</span>"+item.type+"</span></span></div></a>" 
 });
 
 /**
