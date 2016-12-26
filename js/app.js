@@ -152,11 +152,13 @@ var mobile = "<?xml version='1.0' encoding='utf-8'?><svg version='1.1' xmlns='ht
 var site = "<?xml version='1.0' encoding='utf-8'?><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='40' height='32' viewBox='0 0 40 32'><path d='M26 23l3 3 10-10-10-10-3 3 7 7z'></path><path d='M14 9l-3-3-10 10 10 10 3-3-7-7z'></path><path d='M21.916 4.704l2.171 0.592-6 22.001-2.171-0.592 6-22.001z'></path></svg>";
 
 var portfolio = [
-    {name: "Teles TI", type: "Site", url: "http://telesti.com.br/"},
+    {name: "Le Parc SSA", type: "App Android (via IWWA)", url: "https://play.google.com/store/apps/details?id=br.com.leparcssa&hl=pt_BR"},
+    {name: "Le Parc SSA", type: "App iOS (via IWWA)", url: "https://itunes.apple.com/br/app/le-parc-ssa/id1159763443?mt=8"},
     {name: "AuraBrasil", type: "App Android (via IWWA)", url: "https://play.google.com/store/apps/details?id=com.aurabrasil.app&hl=pt_BR"},
     {name: "AuraBrasil", type: "App iOS (via IWWA)", url: "https://itunes.apple.com/br/app/aurabrasil/id1108525914?mt=8"},
     {name: "IAF", type: "App Android (via IWWA)", url: "https://play.google.com/store/apps/details?id=br.org.iaf&hl=pt_BR"},
     {name: "IAF", type: "App iOS (via IWWA)", url: "https://itunes.apple.com/br/app/iaf-instituto-dos-auditores/id1137215515?mt=8"},
+    {name: "Teles TI", type: "Site", url: "http://telesti.com.br/"},
 ];
 
 portfolio.forEach(function(item) {
