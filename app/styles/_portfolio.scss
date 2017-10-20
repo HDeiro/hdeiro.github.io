@@ -14,12 +14,22 @@
         display: flex;
         font-family: OpenSansSemibold;
         font-weight: 500;
+        align-items: center;
     }
 
     p {
         color: $text-color;
         font-family: OpenSansRegular;
         font-size: 14px;
+    }
+
+    .chip {
+        color: #fff;
+        background: $main-color;
+        padding: 3px 8px;
+        border-radius: 6px;
+        font-size: 12px;
+        margin-left: 8px;
     }
 
     .usedskills {
