@@ -1,2 +1,3 @@
 Página pessoal de Hugo Deiró
-hugodeiro@gmail.com
+Para visualizar, acesse: hugodeiro.me
+Contatos: hugodeiro@gmail.com
