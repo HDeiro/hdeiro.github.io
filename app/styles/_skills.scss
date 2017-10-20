@@ -1,0 +1,36 @@
+@keyframes zoomSkill {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+}
+  
+.skills {
+    align-items: baseline;
+
+    &[data-already-animated*="true"] {
+        display: flex;
+    }
+
+    .skillset {
+        @extend %display-flex-wrap;
+        margin-top: 20px;
+    }
+
+    .skill {
+        border-radius: 6px;
+        padding: 4px 12px;
+        margin: 4px;
+        animation-name: zoomSkill;
+        opacity: 0;
+        will-change: opacity, transform;
+        transform: translate3d(0, 0, 0);
+        animation-timing-function: cubic-bezier(.4,0,.2,1);
+        animation-fill-mode: both;
+        animation-duration: 1000ms;
+    }
+}

@@ -1,9 +1,0 @@
-@mixin box-shadow($horizontal, $vertical, $spread, $blur, $color, $inset: false) {
-  @if $inset {
-      -webkit-box-shadow:inset $horizontal $vertical $spread $blur $color;
-      box-shadow:inset $horizontal $vertical $spread $blur $color;
-  } @else {
-      -webkit-box-shadow: $horizontal $vertical $spread $blur $color;
-      box-shadow: $horizontal $vertical $spread $blur $color;
-  }
-}

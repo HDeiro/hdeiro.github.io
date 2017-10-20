@@ -1,0 +1,33 @@
+.portfolio {
+    &-item {
+        border-top: 1px solid lightgray;
+        margin-top: 20px;
+    }
+
+    &-first-item {
+        margin-top: 0;
+        border-top: none;
+    }
+
+    &-title {
+        color: $main-color;
+        display: flex;
+        font-family: OpenSansSemibold;
+        font-weight: 500;
+    }
+
+    p {
+        color: $text-color;
+        font-family: OpenSansRegular;
+        font-size: 14px;
+    }
+
+    .usedskills {
+        @extend %display-flex-wrap;
+        justify-content: flex-start;
+
+        .skill:first-child {
+            margin-left: 0;
+        }
+    }
+}
