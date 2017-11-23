@@ -1,5 +1,13 @@
 .skills {
+    display: flex;
+    justify-content: center;
     align-items: baseline;
+    flex-wrap: wrap;
+
+    .content-half {
+        max-width: 700px;
+        margin: 0 30px;
+    }
 
     &[data-already-animated*="true"] {
         display: flex;
