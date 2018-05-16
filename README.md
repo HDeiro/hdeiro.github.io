@@ -1,5 +1,5 @@
 Página pessoal de Hugo Deiró
 
-Para visualizar, acesse: http://hugodeiro.me/
+Para visualizar, acesse: https://hugodeiro.com/
 
 Contato: hugodeiro@gmail.com

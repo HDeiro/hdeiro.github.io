@@ -255,7 +255,7 @@ gulp.task(tasks.html_replace, () => {
            // Take the content of CSS file and rip off all the "../" 
            // references to refer from the index.html
             css = fs.readFileSync(css, 'utf8').split('../').join('');
-            css = `<style>${css}</style>`;
+            css = `<style type="text/css">${css}</style>`;
             console.log('Exchanged the CSS reference for the stylesheet content');
         }
 
@@ -266,7 +266,7 @@ gulp.task(tasks.html_replace, () => {
         if(yargs.xjs) {
             //Take the content of JavaScript concatenated file and put it direct on body of index.html
             js = fs.readFileSync(js, 'utf8');
-            js = `<script>${js}</script>`;
+            js = `<script type="text/javascript">${js}</script>`;
             console.log('Exchanged the JS reference for the script content');
         }
 
