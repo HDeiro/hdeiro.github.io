@@ -49,5 +49,12 @@ header {
                 transform: scale(1);
             }
         }
+
+        a {
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
