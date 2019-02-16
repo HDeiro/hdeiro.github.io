@@ -43,7 +43,11 @@ body {
             width: 80%;
         }
 
-        .usedskills, .portfolio-title {
+        .portfolio-title {
+            align-items: center !important;
+        }
+
+        .usedskills {
             justify-content: center !important;
         }
     }

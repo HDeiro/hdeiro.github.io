@@ -14,7 +14,18 @@
         display: flex;
         font-family: OpenSansSemibold;
         font-weight: 500;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .hashtag {
+            font-size: .8em;
+            color: #5D46BD;
+            margin-top: 6px;
+
+            &:before {
+                content: "#";
+            }
+        }
     }
 
     p {
