@@ -3,60 +3,85 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=5">
     <meta name="msapplication-tap-highlight" content="no">
-    
-    <!-- Browser`s header background color -->
-    <meta name="theme-color" content="#3B3237">
-    <meta name="msapplication-navbutton-color" content="#3B3237">
-    
+
+    <!-- Browser's header background color -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+
     <!-- Robots info -->
     <meta name="robots" content="index">
     <meta name="googlebot" content="index">
-    
+
     <!-- Site info -->
-    <meta name="description" content="Página pessoal de Hugo Deiró">
-    <meta name="keywords" content="Analista e Desenvolvedor de Sistemas de Salvador - BA">    
-    <meta name="author" content="Hugo Deiró">    
+    <meta name="description" content="Hugo Deiró, Analista e Desenvolvedor de Sistemas">
+    <meta name="keywords" content="Hugo Deiró, Analista e Desenvolvedor de Sistemas">
+    <meta name="author" content="Hugo Deiró">
+    <meta name="copyright" content="Hugo Deiró">
 
-    <title>Hugo Deiró</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/> 
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="no">
+    <meta name="application-name" content="Weskit">
+    <link rel="icon" sizes="192x192" href="images/pwa-icons/icon-192x192.png">
 
-    <!-- build:css -->
-        <!-- 
-            This CSS reference will be replaced by the content of the file
-            to reduce the file request number.
-        -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- endbuild -->
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Weskit">
+    <link rel="apple-touch-icon" href="images/pwa-icons/icon-192x192.png">
+
+    <!-- Custom twitter cardbox
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="site address">
+    <meta name="twitter:title" content="site title">
+    <meta name="twitter:description" content="site description">
+    <meta name="twitter:image" content="images/pwa-icons/icon-512x512.jpg"> -->
+
+    <!-- Custom Facebook cardbox
+    <meta property="og:title" content="page title">
+    <meta property="og:image" content="images/pwa-icons/icon-512x512.jpg">
+    <meta property="og:description" content="site description"> -->
+
+    <title>WESKIT</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<link rel="manifest" href="/manifest.json">
+
+	<!-- build:css -->
+		<!-- Add critical CSS references here -->
+	<link rel="stylesheet" href="css/internal-critical.css">
+	<!-- endbuild -->
+
+	<!-- Resource Hints -->
+	<link rel="preload" as="script" crossorigin="crossorigin" href="https://www.google-analytics.com/analytics.js">
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <img class="avatar" data-efecss="zoomIn" src="images/hugodeiro.jpg"/>
+    <header class="icon-header-background">
+        <img class="avatar" data-efecss="zoomIn" src="images/hugodeiro.jpg" alt="Foto de Hugo Deiró"/>
         <h2 class="title" data-efecss="slideInDown">Hugo Deiró</h2>
         <h1 class="typing subtitle" data-efecss="slideInUp">Desenvolvedor, Estudante e Apaixonado por Tecnologia</h1>
 
         <div class="contacts">
-            <a target="_blank" href="https://github.com/HDeiro" 
+            <a target="_blank" href="https://github.com/HDeiro" rel="noreferrer"
                 title="Github" data-efecss="zoomInBig">
                 <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x31__stroke"><g id="Github_1_"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/><path clip-rule="evenodd" d="M63.996,1.333C28.656,1.333,0,30.099,0,65.591    c0,28.384,18.336,52.467,43.772,60.965c3.2,0.59,4.368-1.394,4.368-3.096c0-1.526-0.056-5.566-0.088-10.927    c-17.804,3.883-21.56-8.614-21.56-8.614c-2.908-7.421-7.104-9.397-7.104-9.397c-5.812-3.988,0.44-3.907,0.44-3.907    c6.42,0.454,9.8,6.622,9.8,6.622c5.712,9.819,14.98,6.984,18.628,5.337c0.58-4.152,2.236-6.984,4.064-8.59    c-14.212-1.622-29.152-7.132-29.152-31.753c0-7.016,2.492-12.75,6.588-17.244c-0.66-1.626-2.856-8.156,0.624-17.003    c0,0,5.376-1.727,17.6,6.586c5.108-1.426,10.58-2.136,16.024-2.165c5.436,0.028,10.912,0.739,16.024,2.165    c12.216-8.313,17.58-6.586,17.58-6.586c3.492,8.847,1.296,15.377,0.636,17.003c4.104,4.494,6.58,10.228,6.58,17.244    c0,24.681-14.964,30.115-29.22,31.705c2.296,1.984,4.344,5.903,4.344,11.899c0,8.59-0.08,15.517-0.08,17.626    c0,1.719,1.152,3.719,4.4,3.088C109.68,118.034,128,93.967,128,65.591C128,30.099,99.344,1.333,63.996,1.333" fill="#000" fill-rule="evenodd" id="Github"/></g></g></svg>
             </a>
 
-            <a target="_blank" href="https://br.linkedin.com/in/hdeiro" 
+            <a target="_blank" href="https://br.linkedin.com/in/hdeiro" rel="noreferrer"
                 title="LinkedIn" data-efecss="zoomInBig" data-animation-delay="300ms">
                 <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" height="128px" id="Layer_1" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="64" cy="64" fill="#0076B4" r="64"/></g><g><path d="M44.119,95.934H29.184V47.93h14.935V95.934z M36.656,41.371c-4.792,0-8.656-3.876-8.656-8.653   c0-4.775,3.864-8.652,8.656-8.652c4.771,0,8.646,3.876,8.646,8.652C45.303,37.495,41.428,41.371,36.656,41.371z M100,95.934H85.081   V72.59c0-5.566-0.097-12.728-7.752-12.728c-7.765,0-8.948,6.065-8.948,12.33v23.742H53.479V47.93H67.78v6.562h0.204   c1.99-3.774,6.857-7.753,14.117-7.753c15.105,0,17.897,9.939,17.897,22.868L100,95.934L100,95.934z" fill="#FFFFFF"/></g></svg>
             </a>
 
-            <a  target="_blank" href="https://slides.com/hdeiro"
-                title="Slides de minhas Apresentações" 
+            <a target="_blank" href="https://slides.com/hdeiro" rel="noreferrer"
+                title="Slides de minhas Apresentações"
                 data-efecss="zoomInBig" data-animation-delay="600ms">
                 <svg version="1.1" id="Symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
                     <g id="Layers">
-                        
+
                             <rect x="105.788" y="97.399" transform="matrix(0.9801 0.1983 -0.1983 0.9801 65.6971 -55.2603)" fill="#512833" width="405.796" height="405.807"/>
-                        
+
                             <rect x="79.178" y="97.399" transform="matrix(0.9953 0.0966 -0.0966 0.9953 30.3391 -25.8528)" fill="#934358" width="405.801" height="405.804"/>
                         <rect x="53.352" y="97.4" fill="#E5637C" width="405.802" height="405.802"/>
                     </g>
@@ -73,9 +98,9 @@
                 </svg>
             </a>
 
-            <a target="_blank" href="mailto:hugodeiro@gmail.com" 
+            <a target="_blank" href="mailto:hugodeiro@gmail.com" rel="noreferrer"
                 title="E-mail (hugodeiro@gmail.com)" data-efecss="zoomInBig" data-animation-delay="900ms">
-                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="64" cy="64" fill="#4B5F83" id="circle" r="64"/><g id="icon"><rect fill="#22A7F0" height="50" id="bg" width="70" x="29" y="39"/><polygon fill="#1F8EBF" id="triangle_3_" points="29,89 64,57 99,89  "/><polygon fill="#22A7F0" id="triangle_2_" points="29,89 64,58.8 99,89  "/><polygon fill="#1F8EBF" id="triangle_1_" points="99,39 64,71 29,39  "/><polygon fill="#48BCEF" id="triangle" points="99,39 64,69.2 29,39  "/></g></svg>
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Layer_2" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="64" cy="64" fill="#4B5F83" id="circle" r="64"/><g id="icon"><rect fill="#22A7F0" height="50" id="bg" width="70" x="29" y="39"/><polygon fill="#1F8EBF" id="triangle_3_" points="29,89 64,57 99,89  "/><polygon fill="#22A7F0" id="triangle_2_" points="29,89 64,58.8 99,89  "/><polygon fill="#1F8EBF" id="triangle_1_" points="99,39 64,71 29,39  "/><polygon fill="#48BCEF" id="triangle" points="99,39 64,69.2 29,39  "/></g></svg>
             </a>
         </div>
     </header>
@@ -85,19 +110,13 @@
         <div class="content">
             <h2 class="title" data-efecss="slideInDown">#whoami</h2>
             <div data-efecss="slideInUp">
-                <p>Gênio, playboy e milionário. Ao menos é o que eu queria ser, risos.</p> 
-                
-                <p>Sou um cara muito esforçado, que gosta muito do que faz e tem uma paixão imensa por compartilhar o que aprende. Além disso, tenho muito orgulho em ser Técnico em Informática e Analista de Sistemas pelo <a href="http://portal.ifba.edu.br/" target="_blank">Instituto Federal da Bahia (IFBA)</a>, campus <a href="http://portal.ifba.edu.br/camacari" target="_blank">Camaçari</a> e <a href="http://portal.ifba.edu.br/salvador" target="_blank">Salvador</a> (respectivamente). Além disso, ainda estou no Ifba (é muito amor!) como aluno especial do <a href="https://ppgesp.ifba.edu.br/Mestrado-%E2%80%92-Apresenta%C3%A7%C3%A3o" target="_blank">Programa de Pós Graduação em Engenharia de Sistemas e Produtos (PPGESP)</a>.</p> 
-                
-                <p>Profissionalmente falando, sou Analista de Sistemas pela Ericsson Inovação S.A. (EISA), onde atuo no desenvolvimento de soluções para sistemas de telecomunicação.</p>
+                <p>Gênio, playboy e milionário. Ao menos é o que eu queria ser, risos.</p>
 
-                <p>Ah, e eu faço freelas também! <a href="mailto:hugodeiro@gmail.com" target="_blank">#mandafreelas</a></p>
-                <p>
-                    Sou integrante da Open Projects at IFBA (OPAI) desde sua fundação, em 2015.
-                    <a href="http://opai.github.io" target="blank" style="display: block; margin-top: 16px;">
-                        <img src="images/logo-opai.png" alt="Logotipo da OPAI" width="100px">
-                    </a>
-                </p>
+                <p>Sou um cara muito esforçado, que gosta muito do que faz e tem uma paixão imensa por compartilhar o que aprende. Além disso, tenho muito orgulho em ser Técnico em Informática e Analista de Sistemas pelo <a rel="noreferrer" href="http://portal.ifba.edu.br/" target="_blank">Instituto Federal da Bahia (IFBA)</a>, campus <a rel="noreferrer" href="http://portal.ifba.edu.br/camacari" target="_blank">Camaçari</a> e <a rel="noreferrer" href="http://portal.ifba.edu.br/salvador" target="_blank">Salvador</a> (respectivamente). Além disso, ainda estou no Ifba (é muito amor!) como aluno especial do <a rel="noreferrer" href="https://ppgesp.ifba.edu.br/Mestrado-%E2%80%92-Apresenta%C3%A7%C3%A3o" target="_blank">Programa de Pós Graduação em Engenharia de Sistemas e Produtos (PPGESP)</a>.</p>
+
+                <p>Profissionalmente falando, sou Analista de Sistemas Sênior pela <a rel="noreferrer" href="https://www.wexinc.com.br/" rel="noreferrer" target="_blank">Wex Brasil</a>.</p>
+
+                <p>Ah, e eu faço freelas também! <a rel="noreferrer" href="mailto:hugodeiro@gmail.com" rel="noreferrer" target="_blank">#mandafreelas</a></p>
             </div>
         </div>
     </section>
@@ -111,6 +130,7 @@
             <div class="content content-half">
                 <h2 class="title" data-efecss="slideInDown">#techskills</h2>
                 <div class="skillset techskillsset" data-efecss="slideInUp">
+                    <span data-efecss="zoomIn" data-animation-delay="500ms" class="skill" style="background-color:#DD0031;">Angular</span>
                     <span data-efecss="zoomIn" data-animation-delay="500ms" class="skill" style="background-color:#E34F26;">HTML5</span>
                     <span data-efecss="zoomIn" data-animation-delay="400ms" class="skill" style="background-color:#1E90FF;">CSS3</span>
                     <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#C6538C;">SASS</span>
@@ -143,7 +163,7 @@
                     <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#000000;">Apache Kafka</span>
                 </div>
             </div>
-            
+
             <div class="content content-half">
                 <h2 class="title" data-efecss="slideInDown">#otherskills</h2>
                 <div class="skillset otherskillset" data-efecss="slideInUp">
@@ -162,25 +182,25 @@
         </div>
     </section>
 
-    <!-- DIVIDER -->    
+    <!-- DIVIDER -->
     <section class="divider divider-2">&nbsp;</section>
 
     <!-- PORTFÓLIO -->
     <section class="section portfolio">
         <div class="content">
             <h2 class="title" data-efecss="slideInDown">#portfolio</h2>
-            
+
             <!-- Zap -->
             <div class="portfolio-item portfolio-first-item" data-efecss="slideInUp">
                 <h3 class="portfolio-title" data-efecss="zoomIn">
                     <span class="label">Zap</span>
                     <span>
-                        <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Website</span>                
-                        <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Ferramenta</span>                
+                        <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Website</span>
+                        <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Ferramenta</span>
                     </span>
                 </h3>
                 <p>
-                    Uma ferramenta que utiliza a API do WhatsApp para enviar mensagens para as pessoas sem precisar salvar o contato delas. <a href="https://zap.hugodeiro.com" target="_blank">Clique aqui para checar o Zap</a>.
+                    Uma ferramenta que utiliza a API do WhatsApp para enviar mensagens para as pessoas sem precisar salvar o contato delas. <a rel="noreferrer" href="https://zap.hugodeiro.com" target="_blank">Clique aqui para checar o Zap</a>.
                 </p>
                 <div class="skills usedskills">
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="300ms" style="color:white; background-color:#2253ac;">Weskit</span>
@@ -192,82 +212,17 @@
                 </div>
             </div>
 
-            <!-- NTF-A -->
-            <div class="portfolio-item portfolio-first-item" data-efecss="slideInUp">
-                <h3 class="portfolio-title" data-efecss="zoomIn">
-                    <span class="label">(RM) Notification-Adapter (NTF-A)</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Software</span>                
-                </h3>
-                <p>
-                    Durante minha estadia na EISA, participei do desenvolvimento e manutenção do Notification Adapter, que é uma aplicação complementar ao Notification (NTF). A função do NTF encontra-se em mediar a comunicação entre os NTF e outros Technical Project Groups (TPGs).
-                </p>
-                <div class="skills usedskills">
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#CB5756;">Java</span>
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#A5F7A5;">Gerrit</span>
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#444444;">Maven</span>
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#660033;">Apache Camel</span>
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#295D87;">Apache Karaf</span>
-                </div>
-            </div>
-            
-            <!-- NTF-A-Conf -->
-            <div class="portfolio-item" data-efecss="slideInUp">
-                <h3 class="portfolio-title" data-efecss="zoomIn">
-                    <span class="label">(RM) Notification-Adapter (NTF-A)</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Configuration</span>         
-                </h3>
-                <p>
-                    Durante minha estadia na EISA, participei do desenvolvimento e manutenção das configurações do Notification Adapter, utilizadas para mediar a comunicação entre o Technical Project Group (TPG) NTF e outros TPGs.
-                </p>
-                <div class="skills usedskills">
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#A5F7A5;">Gerrit</span>
-                </div>
-            </div>
-
-            <!-- NTF-SI -->
-            <div class="portfolio-item" data-efecss="slideInUp">
-                <h3 class="portfolio-title" data-efecss="zoomIn">
-                    <span class="label">(RM) Notification-SI (NTF Configuration)</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Configuration</span>                
-                </h3>
-                <p>
-                    Durante minha estadia na EISA, participei do desenvolvimento e manutenção das configurações do Notification (NTF), um dos módulos do Revenue Manager que é responsável por enviar notificações aos clientes.
-                </p>
-                <div class="skills usedskills">
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#A5F7A5;">Gerrit</span>
-                </div>
-            </div>
-
-            <!-- CM Dump Application -->
-            <div class="portfolio-item" data-efecss="slideInUp">
-                <h3 class="portfolio-title" data-efecss="zoomIn">
-                    <span class="label">(RM) Case Management Dump Application</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Software</span>                
-                </h3>
-                <p>
-                    Durante minha estadia na EISA, participei ativamente da evolução da CM Dump Application. Uma aplicação de integração que tem por finalidade agrupar os cases cadastrados ao longo do dia, consolidá-los e disponibilizá-los ao final do dia para outra aplicação, a Ericsson Multi Mediation (EMM), consumir.
-                </p>
-                <div class="skills usedskills">
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#CB5756;">Java</span>
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#A5F7A5;">Gerrit</span>
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#444444;">Maven</span>
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#660033;">Apache Camel</span>
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#295D87;">Apache Karaf</span>
-                    <span data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="background-color:#000000;">Apache Kafka</span>
-                </div>
-            </div>
-
             <!-- OPAI -->
             <div class="portfolio-item" data-efecss="slideInUp">
                 <h3 class="portfolio-title" data-efecss="zoomIn">
                     <span class="label">Open Projects at IFBA (OPAI)</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Landing Page</span>                
+                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Landing Page</span>
                 </h3>
                 <p>
                     Página da Open Projects at IFBA (OPAI), um grupo criado pelos estudantes do IFBA com intuito de compartilhar conhecimento através de eventos organizados pelos próprios membros.
                 </p>
                 <p>
-                    Disponível em <a href="opai.github.io" target="blank">opai.github.io</a>
+                    Disponível em <a rel="noreferrer" href="opai.github.io" target="blank">opai.github.io</a>
                 </p>
                 <div class="skills usedskills">
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="300ms" style="color:white; background-color:#2253ac;">Weskit</span>
@@ -285,13 +240,13 @@
             <div class="portfolio-item" data-efecss="slideInUp">
                 <h3 class="portfolio-title">
                     <span class="label">Efecss</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Ferramenta</span>                
+                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Ferramenta</span>
                 </h3>
                 <p>
-                    Uma <i>lib</i> desenvolvida para animações simples utilizando JavaScript e CSS. Existem duas versões, a <a href="https://github.com/efecss/efecss-pure-css" target="blank"><i>pure-css</i></a>, que utiliza apenas classes e a <a href="https://github.com/efecss/efecss" target="blank"><i>default</i></a>, que utiliza JavaScript para fazer outros tipos de controles de animação.
+                    Uma <i>lib</i> desenvolvida para animações simples utilizando JavaScript e CSS. Existem duas versões, a <a rel="noreferrer" href="https://github.com/efecss/efecss-pure-css" target="blank"><i>pure-css</i></a>, que utiliza apenas classes e a <a rel="noreferrer" href="https://github.com/efecss/efecss" target="blank"><i>default</i></a>, que utiliza JavaScript para fazer outros tipos de controles de animação.
                 </p>
                 <p>
-                    A versão <i>default</i> também pode ser encontrada nos <a href="https://www.npmjs.com/package/efecss" target="blank">repositórios do NPM</a>.
+                    A versão <i>default</i> também pode ser encontrada nos <a rel="noreferrer" href="https://www.npmjs.com/package/efecss" target="blank">repositórios do NPM</a>.
                 </p>
                 <div class="skills usedskills">
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="300ms" style="color:white; background-color:#C6538C;">SASS</span>
@@ -299,18 +254,18 @@
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="500ms" style="color:white; background-color:#E84B4B;">Gulp</span>
                 </div>
             </div>
-            
+
             <!-- Weskit -->
             <div class="portfolio-item" data-efecss="slideInUp">
                 <h3 class="portfolio-title" data-efecss="zoomIn">
                     <span class="label">Weskit</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Ferramenta</span>                
+                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Ferramenta</span>
                 </h3>
                 <p>
-                    O Web Starter Kit (Weskit) é ferramenta desenvolvida para inicialização de novos websites. Essa ferramenta já foi utilizada alguns projetos (inclusive neste website) e obteve ótimos resultados no <a href="https://developers.google.com/speed/pagespeed/insights/">Google PageSpeed Insights</a>.
+                    O Web Starter Kit (Weskit) é ferramenta desenvolvida para inicialização de novos websites. Essa ferramenta já foi utilizada alguns projetos (inclusive neste website) e obteve ótimos resultados no <a rel="noreferrer" href="https://developers.google.com/speed/pagespeed/insights/">Google PageSpeed Insights</a>.
                 </p>
                 <p>
-                    O Weskit está disponível no <a href="https://github.com/hdeiro/weskit" target="blank">Github</a>.
+                    O Weskit está disponível no <a rel="noreferrer" href="https://github.com/hdeiro/weskit" target="blank">Github</a>.
                 </p>
                 <div class="skills usedskills">
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="300ms" style="color:white; background-color:#DAA520;">JavaScript</span>
@@ -322,13 +277,13 @@
             <div class="portfolio-item" data-efecss="slideInUp">
                 <h3 class="portfolio-title" data-efecss="zoomIn">
                     <span class="label">Congresso de Metodologia do Ensino de Línguas (CoMEL) 2018</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Landing Page</span>                
+                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Landing Page</span>
                 </h3>
                 <p>
-                    O I Congresso de Metodologia do Ensino de Línguas – CoMEL, com o tema Multiplicando para Somar, é resultado de uma capacitação na University of Miami, na Flórida, Estados Unidos. 30 professores de Língua Inglesa da rede pública foram contemplados com bolsas de estudos para passar seis semanas estudando em Miami. Fizeram um curso de 360h sobre Metodologia do Ensino, após terem sido selecionados por meio do Edital no19/2017 para participar do Programa de Desenvolvimento de Professores de Inglês – PDPI, uma iniciativa conjunta da CAPES e FULBRIGHT. 
+                    O I Congresso de Metodologia do Ensino de Línguas – CoMEL, com o tema Multiplicando para Somar, é resultado de uma capacitação na University of Miami, na Flórida, Estados Unidos. 30 professores de Língua Inglesa da rede pública foram contemplados com bolsas de estudos para passar seis semanas estudando em Miami. Fizeram um curso de 360h sobre Metodologia do Ensino, após terem sido selecionados por meio do Edital no19/2017 para participar do Programa de Desenvolvimento de Professores de Inglês – PDPI, uma iniciativa conjunta da CAPES e FULBRIGHT.
                 </p>
                 <p>
-                    Disponível em <a href="http://dale-ssa.ifba.edu.br/comel" target="blank">dale-ssa.ifba.edu.br/comel</a>
+                    Disponível em <a rel="noreferrer" href="http://dale-ssa.ifba.edu.br/comel" target="blank">dale-ssa.ifba.edu.br/comel</a>
                 </p>
                 <div class="skills usedskills">
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="300ms" style="color:white; background-color:#2253ac;">Weskit</span>
@@ -347,7 +302,7 @@
                 <h3 class="portfolio-title">
                     <span class="label">Le Parc</span>
                     <span>
-                        <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Aplicativo</span>               
+                        <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Aplicativo</span>
                         <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Sistema Web</span>
                     </span>
                 </h3>
@@ -358,7 +313,7 @@
                 </p>
                 <p>
                     O aplicativo foi desenvolvido durante o tempo em que trabalhei na IWWA - Agência Digital
-                    e está disponível na <a href="https://play.google.com/store/apps/details?id=br.com.leparcssa&hl=pt_BR" target="blank">Google Play</a> e na <a href="https://itunes.apple.com/br/app/le-parc-ssa/id1159763443?mt=8" target="blank">App Store</a>.
+                    e está disponível na <a rel="noreferrer" href="https://play.google.com/store/apps/details?id=br.com.leparcssa&hl=pt_BR" target="blank">Google Play</a> e na <a rel="noreferrer" href="https://itunes.apple.com/br/app/le-parc-ssa/id1159763443?mt=8" target="blank">App Store</a>.
                 </p>
                 <div class="skills usedskills">
                     <span  data-efecss="zoomIn" data-animation-delay="300ms" class="skill" style="color:white; background-color:#E34F26;">HTML5</span>
@@ -379,7 +334,7 @@
             <div class="portfolio-item"  data-efecss="slideInUp">
                 <h3 class="portfolio-title" data-efecss="zoomIn">
                     <span class="label">Gestores VXCase</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Aplicativo</span>                
+                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Aplicativo</span>
                 </h3>
                 <p>
                     O aplicativo Gestores VXCase possui diversas funcionalidades para os gerentes da empresa. Desde a verificação dos produtos até controle de ponto dos colaboradores e muito mais!
@@ -399,18 +354,18 @@
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="1100ms" style="color:white; background-color:#BFBFBF;">Cordova</span>
                 </div>
             </div>
-            
+
             <!-- IAF -->
             <div class="portfolio-item" data-efecss="slideInUp">
                 <h3 class="portfolio-title" data-efecss="zoomIn">
                     <span class="label">Instituto de Auditores Fiscais da Bahia (IAF)</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Aplicativo</span>                
+                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Aplicativo</span>
                 </h3>
                 <p>
                     O aplicativo do IAF apresenta as informações mais recentes relacionadas o Instituto. Seus usuários podem estar sempre atualizados, recebendo um <i>push notification</i> sempre que sair alguma informação de uma categoria sejam de seu interesse.
                 </p>
                 <p>
-                    Este aplicativo foi desenvolvido durante o tempo em que trabalhei na IWWA - Agência Digital, estando disponível na <a href="https://play.google.com/store/apps/details?id=br.org.iaf&hl=pt_BR" target="blank">Google Play</a> e <a href="https://itunes.apple.com/br/app/iaf-instituto-dos-auditores/id1137215515?mt=8" target="blank">App Store</a>
+                    Este aplicativo foi desenvolvido durante o tempo em que trabalhei na IWWA - Agência Digital, estando disponível na <a rel="noreferrer" href="https://play.google.com/store/apps/details?id=br.org.iaf&hl=pt_BR" target="blank">Google Play</a> e <a rel="noreferrer" href="https://itunes.apple.com/br/app/iaf-instituto-dos-auditores/id1137215515?mt=8" target="blank">App Store</a>
                 </p>
                 <div class="skills usedskills">
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="300ms" style="color:white; background-color:#E34F26;">HTML5</span>
@@ -425,17 +380,17 @@
                 </div>
             </div>
 
-            <!-- AuraBrasil -->            
+            <!-- AuraBrasil -->
             <div class="portfolio-item" data-efecss="slideInUp">
                 <h3 class="portfolio-title" data-efecss="zoomIn">
                     <span class="label">AuraBrasil</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Aplicativo</span>                
+                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Aplicativo</span>
                 </h3>
                 <p>
                     O aplicativo da AuraBrasil permite aos seus usuários visualizarem todo catálogo de máquinas disponíveis na empresa, além de permitir que o mesmo possa encontrar a máquina certa para seu ambiente a partir de uma calculadora inteligente, onde são informadas as características do ambiente para que o <i>app</i> possa apresentar os equipamentos que melhor se aplicam a sua situação.
                 </p>
                 <p>
-                    Este aplicativo foi desenvolvido durante o tempo em que trabalhei na IWWA - Agência Digital, estando disponível na <a href="https://play.google.com/store/apps/details?id=com.aurabrasil.app&hl=pt_BR" target="blank">Google Play</a> e <a href="https://itunes.apple.com/br/app/aurabrasil/id1108525914?mt=8" target="blank">App Store</a>
+                    Este aplicativo foi desenvolvido durante o tempo em que trabalhei na IWWA - Agência Digital, estando disponível na <a rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.aurabrasil.app&hl=pt_BR" target="blank">Google Play</a> e <a rel="noreferrer" href="https://itunes.apple.com/br/app/aurabrasil/id1108525914?mt=8" target="blank">App Store</a>
                 </p>
                 <div class="skills usedskills">
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="300ms" style="color:white; background-color:#E34F26;">HTML5</span>
@@ -453,13 +408,13 @@
             <div class="portfolio-item" data-efecss="slideInUp">
                 <h3 class="portfolio-title" data-efecss="zoomIn">
                     <span class="label">Compartilhe Nassau</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Hotsite</span>                
+                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Hotsite</span>
                 </h3>
                 <p>
                     Um <i>hotsite</i> da Uninassau em que os estudantes podem enviar vídeos com depoimentos sobre a instituição, além de apresentar informações importantes e opiniões de outros usuários.
                 </p>
                 <p>
-                    Este hotsite foi desenvolvido enquanto eu trabalhei na IWWA - Agência Digital, estando disponível em <a href="http://www.compartilhenassau.com.br" target="blank">compartilhenassau.com.br</a>
+                    Este hotsite foi desenvolvido enquanto eu trabalhei na IWWA - Agência Digital, estando disponível em <a rel="noreferrer" href="http://www.compartilhenassau.com.br" target="blank">compartilhenassau.com.br</a>
                 </p>
                 <div class="skills usedskills">
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="300ms" style="color:white; background-color:#E34F26;">HTML5</span>
@@ -475,13 +430,13 @@
             <div class="portfolio-item" data-efecss="slideInUp">
                 <h3 class="portfolio-title" data-efecss="zoomIn">
                     <span class="label">EducGames</span>
-                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Landing Page</span>                
+                    <span class="hashtag" data-efecss="zoomIn" data-animation-delay="300ms">Landing Page</span>
                 </h3>
                 <p>
                     Uma <i>landing page</i> para o projeto de extensão EducGames, do Instituto Federal da Bahia (IFBA), que tem por objetivo ensinar através dos jogos.
                 </p>
                 <p>
-                    Este projeto foi desenvolvido através do Processo N°23279.010987/2016-81, que dispensou licitação para o desenvolvimento de uma página web para o projeto <a href="http://educgames.ifba.edu.br" target="blank">EducGames</a>
+                    Este projeto foi desenvolvido através do Processo N°23279.010987/2016-81, que dispensou licitação para o desenvolvimento de uma página web para o projeto <a rel="noreferrer" href="http://educgames.ifba.edu.br" target="blank">EducGames</a>
                 </p>
                 <div class="skills usedskills">
                     <span class="skill" data-efecss="zoomIn" data-animation-delay="300ms" style="color:white; background-color:#E34F26;">HTML5</span>
@@ -495,18 +450,21 @@
         </div>
     </section>
 
-    <!-- build:js-->
-    <script src="js/script.js"></script>
-    <!-- endbuild -->
+	<!-- build:js -->
+	<!-- Add critical JS references here -->
+	<script src="js/internal-critical.js"></script>
+	<!-- endbuild -->
 
+    <!-- build:sw --><!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        
-        ga('create', 'UA-89475719-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-</body>
-</html>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-89475719-1', 'auto');
+		ga('send', 'pageview');
+	  </script>
+  </body>
+  </html>

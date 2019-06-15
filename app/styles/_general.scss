@@ -62,7 +62,7 @@ body {
     }
 
     .title {
-        font-family: Lobster;
+        font-family: $font-family-1;
         font-size: 42px;
         color: $main-color;
         margin-bottom: 0;
@@ -71,7 +71,7 @@ body {
     p {
         font-size: 18px;
         line-height: 1.4em;
-        font-family: OpenSansRegular;
+        font-family: $font-family-2;
         color: $text-color;
     }
 }
@@ -83,7 +83,7 @@ body {
     &-1 {
         background-image: url(../images/divider-1-background.jpg);
     }
-    
+
     &-2 {
         background-image: url(../images/divider-2-background.jpg);
     }

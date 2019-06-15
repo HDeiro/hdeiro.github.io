@@ -1,0 +1,62 @@
+{
+    "short_name": "Hugo Deiró",
+    "name": "Hugo Deiró",
+    "description": "Website pessoal de Hugo Deiró",
+    "icons": [
+		{
+		  "src": "/images/pwa-icons/hugodeiro-72x72.jpg",
+		  "type": "image/jpg",
+		  "sizes": "72x72"
+		},
+		{
+		  "src": "/images/pwa-icons/hugodeiro-96x96.jpg",
+		  "type": "image/jpg",
+		  "sizes": "96x96"
+		},
+		{
+		  "src": "/images/pwa-icons/hugodeiro-128x128.jpg",
+		  "type": "image/jpg",
+		  "sizes": "128x128"
+		},
+		{
+		  "src": "/images/pwa-icons/hugodeiro-144x144.jpg",
+		  "type": "image/jpg",
+		  "sizes": "144x144"
+		},
+		{
+		  "src": "/images/pwa-icons/hugodeiro-152x152.jpg",
+		  "type": "image/jpg",
+		  "sizes": "152x152"
+		},
+		{
+		  "src": "/images/pwa-icons/hugodeiro-192x192.jpg",
+		  "type": "image/jpg",
+		  "sizes": "192x192"
+		},
+		{
+		  "src": "/images/pwa-icons/hugodeiro-384x384.jpg",
+		  "type": "image/jpg",
+		  "sizes": "384x384"
+		},
+		{
+		  "src": "/images/pwa-icons/hugodeiro-512x512.jpg",
+		  "type": "image/jpg",
+		  "sizes": "512x512"
+		},
+		{
+		  "src": "/images/pwa-icons/hugodeiro-120x120.jpg",
+		  "type": "image/jpg",
+		  "sizes": "120x120"
+		},
+		{
+		  "src": "/images/pwa-icons/hugodeiro-180x180.jpg",
+		  "type": "image/jpg",
+		  "sizes": "180x180"
+		}
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#555",
+    "theme_color": "#555",
+    "display": "standalone",
+    "scope": "/"
+  }

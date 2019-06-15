@@ -17,8 +17,8 @@
 
     for (a in list) {
         all = list[a]; // List of all element
-        text = all.innerHTML += " <span id='cursor'>|</span>"; // InnerHTML of the elements 
-        start = 0; // Start index of the text in the elements 
+        text = all.innerHTML += " <span id='cursor'>|</span>"; // InnerHTML of the elements
+        start = 0; // Start index of the text in the elements
         end = 0; // End index of the text in the elements
         style = document.createElement("style");
         document.head.appendChild(style);
@@ -35,7 +35,7 @@
 
                 end = end + 1; //loops through the text in the element
 
-                // Insert stylesheet to the document to animate cursor 
+                // Insert stylesheet to the document to animate cursor
                 style.sheet.insertRule("@-webkit-keyframes cursor {0% { opacity : 1;}100% { opacity : 0;}}", 0);
                 style.sheet.insertRule("@keyframes cursor {0% { opacity : 1;}100% { opacity : 0;}}", 0);
                 cursor.style.fontSize = "1em";

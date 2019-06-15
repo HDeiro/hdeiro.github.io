@@ -1,3 +1,8 @@
+// Constants
+$font-family-1: Lobster, cursive, sans-serif;
+$font-family-2: OpenSans, sans-serif;
+$font-family-3: OpenSansSemibold, sans-serif;
+
 //General and config files
 @import "normalize.scss";
 @import "fonts.scss";
@@ -7,3 +12,12 @@
 @import "header.scss";
 @import "skills.scss";
 @import "portfolio.scss";
+
+//External
+@import '../../node_modules/efecss/build/styles/constants';
+@import '../../node_modules/efecss/build/styles/general';
+@import '../../node_modules/efecss/build/styles/animation-fade';
+@import '../../node_modules/efecss/build/styles/animation-flip';
+@import '../../node_modules/efecss/build/styles/animation-float';
+@import '../../node_modules/efecss/build/styles/animation-slide';
+@import '../../node_modules/efecss/build/styles/animation-zoom';
