@@ -1,28 +1,25 @@
-.skills {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-wrap: wrap;
+#skills {
+	.skill-container {
+		@extend %df-aic-jcsb-fww;
+	}
 
-    .content-half {
-        max-width: 700px;
-        margin: 0 30px;
-    }
+	.skillset {
+		@extend %df-aic-jcfs-fww;
+		margin-right: 12px;
+		margin-bottom: 12px;
+		width: 100%;
+		max-width: 370px;
 
-    &[data-already-animated*="true"] {
-        display: flex;
-    }
+		&-title {
+			@extend %df-aic-jcsb;
+			margin-bottom: 8px;
+			width: 100%;
+		}
+	}
 
-    .skillset {
-        @extend %display-flex-wrap;
-        margin-top: 20px;
-    }
-
-    .skill {
-        border-radius: 6px;
-        padding: 4px 12px;
-        margin: 4px;
-        color: white;
-        display: inline-block;
-    }
+	.accent {
+		.skillset-title {
+			color: var(--theme-font-color);
+		}
+	}
 }

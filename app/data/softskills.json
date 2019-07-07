@@ -1,0 +1,11 @@
+[
+	{ "name": "Inglês", "percentage": 100 },
+	{ "name": "Boa Interpessoalidade", "percentage": 90 },
+	{ "name": "Curiosidade", "percentage": 90 },
+	{ "name": "Eloquência", "percentage": 90 },
+	{ "name": "Escrita", "percentage": 80 },
+	{ "name": "Organização", "percentage": 70 },
+	{ "name": "Criatividade", "percentage": 70 },
+	{ "name": "Iniciativa", "percentage": 90 },
+	{ "name": "Piadas ruins" }
+]

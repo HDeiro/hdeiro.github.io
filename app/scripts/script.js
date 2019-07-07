@@ -1,54 +1,56 @@
-((selector, type, interval) => {
-    let el = document.querySelectorAll(selector);
-    let i = 0;
-    let len = el.length; // Length of element on the page
-    let list = []; // List of elements on the page in the DOM
-    let a;
-    let all;
-    let text;
-    let start;
-    let end;
-    let nextText;
-    let style;
-    let clear;
+const uri = 'http://localhost:3000';
+const $ = document.querySelector.bind(document);
 
-    for (; i < len; i++)
-        list.push(el[i]); // Pushing the element in the list array
+const techSkillContainer = document.querySelector('#techskills');
+const softSkillsContainer = document.querySelector('#softskills');
 
-    for (a in list) {
-        all = list[a]; // List of all element
-        text = all.innerHTML += " <span id='cursor'>|</span>"; // InnerHTML of the elements
-        start = 0; // Start index of the text in the elements
-        end = 0; // End index of the text in the elements
-        style = document.createElement("style");
-        document.head.appendChild(style);
+// Load tech skills
+fetch(`data/techskills.json`).then(response => response.json().then(skills => {
+	skills.sort(sortAlphabeticaly).forEach(skill => {
+		techSkillContainer.appendChild(generateProgressBar(skill))
+	});
+}));
 
-        //Setting the default interval to 100 when interval is not set by the user
-        if (typeof interval === "undefined") {
-            interval = 100;
-        }
+fetch(`data/softskills.json`).then(response => response.json().then(skills => {
+	skills.sort(sortAlphabeticaly).forEach(skill => {
+		softSkillsContainer.appendChild(generateProgressBar(skill))
+	});
+}));
 
-        if (el) {
-            clear = setInterval(function () { // Animation start
-                var newText = text.substr(start, end);
-                all.innerHTML = newText += " <span id='cursor'>|</span>";
+function sortAlphabeticaly(a, b) {
+    if(a.name < b.name) { return -1; }
+    if(a.name > b.name) { return 1; }
+    return 0;
+}
 
-                end = end + 1; //loops through the text in the element
+function generateProgressBar(item) {
+	const skillset = document.createElement('div');
+	const skillsetTitle = document.createElement('div');
+	const progress = document.createElement('div');
+	const progressLoaded = document.createElement('div');
+	const title = document.createElement('span');
+	const percentage = document.createElement('span');
 
-                // Insert stylesheet to the document to animate cursor
-                style.sheet.insertRule("@-webkit-keyframes cursor {0% { opacity : 1;}100% { opacity : 0;}}", 0);
-                style.sheet.insertRule("@keyframes cursor {0% { opacity : 1;}100% { opacity : 0;}}", 0);
-                cursor.style.fontSize = "1em";
-                cursor.style.fontWeight = "bold";
-                cursor.style.webkitAnimation = "cursor 0.5s infinite";
-                cursor.style.animation = "cursor 0.5s infinite";
+	skillset.classList.add('skillset');
+	skillsetTitle.classList.add('skillset-title');
+	progress.classList.add('progress');
+	progressLoaded.classList.add('loaded');
 
-                if (newText === text) {
-                    clearInterval(clear); // Animation end
-                }
-            }, interval);
-        }
+	title.innerText = item.name;
 
-        return all;
-    }
-})(".typing","true", 30);
+	if(item.percentage) {
+		percentage.innerText = `${item.percentage}%`;
+		progressLoaded.style.width = `${item.percentage}%`;
+	} else {
+		percentage.innerText = `Mais de 8 mil`;
+		progressLoaded.style.width = '100%';
+	}
+
+	skillsetTitle.appendChild(title);
+	skillsetTitle.appendChild(percentage);
+	progress.appendChild(progressLoaded);
+	skillset.appendChild(skillsetTitle);
+	skillset.appendChild(progress);
+
+	return skillset;
+}

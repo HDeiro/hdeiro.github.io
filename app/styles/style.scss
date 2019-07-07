@@ -1,17 +1,15 @@
-// Constants
-$font-family-1: Lobster, cursive, sans-serif;
-$font-family-2: OpenSans, sans-serif;
-$font-family-3: OpenSansSemibold, sans-serif;
 
 //General and config files
-@import "normalize.scss";
-@import "fonts.scss";
+@import "normalize";
+@import "constants";
+@import "fonts";
 
 //Section Files
-@import "general.scss";
-@import "header.scss";
-@import "skills.scss";
-@import "portfolio.scss";
+@import "general";
+@import "header";
+@import "about";
+@import "skills";
+@import "portfolio";
 
 //External
 @import '../../node_modules/efecss/build/styles/constants';

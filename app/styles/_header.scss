@@ -1,60 +1,88 @@
 header {
-    $text-color: #fefefe;
+	background-image: url(../images/header-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 300px;
+	position: relative;
 
-    @extend %display-flex-column;
-    @extend %backgrounded;
+	.header-floating-container {
+		height: 300px;
+		background: var(--theme-color);
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 22%;
+		overflow: hidden;
 
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../images/header-background.jpg);
+		&:after {
+			content: ' ';
+			width: 50%;
+			height: 100%;
+			background-image: url(../images/hugodeiro.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
 
-    .avatar {
-        border-radius: 100%;
-        margin-bottom: 20px;
-        width: 220px;
-    }
+		&:before {
+			content: ' ';
+			position: absolute;
+			left: 50%;
+			top: 0;
+			z-index: 2;
+			border-style: solid;
+			border-width: 332px 0 0 110px;
+			border-color: transparent transparent transparent var(--theme-color);
+		}
+	}
 
-    .title {
-        font-size: 48px;
-        font-family: $font-family-1;
-        margin: 0;
-        margin-bottom: 5px;
-        color: $text-color;
-        text-rendering: optimizeLegibility;
-        letter-spacing: 1px;
-    }
+	.info-container {
+		@extend %df-aic-jcfs-fdc;
+		z-index: 3;
+		height: 100%;
 
-    .subtitle {
-        font-size: 16px;
-        font-family: $font-family-2;
-        margin: 0;
-        color: $text-color;
-        text-rendering: optimizeLegibility;
-        text-align: center;
-        line-height: 1.6em;
-    }
+		.title {
+			font-weight: 500;
+			font-family: $font-family-1;
+			font-size: 48px;
+			color: var(--theme-font-color);
+			margin: 0;
+		}
 
-    .contacts {
-        @extend %display-flex;
+		.subtitle {
+			font-family: $font-family-2;
+			font-size: 18px;
+			color: var(--theme-font-color);
+			margin: 0;
+		}
+	}
 
-        width: 100%;
-        margin-top: 20px;
+	.contacts {
+		list-style: none;
+		padding: 0;
 
-        svg {
-            height: 60px;
-            transition: transform 300ms ease-out;
-            transform: scale(.9);
+		li {
+			@extend %df-aic-jcfs;
+			margin-top: 8px;
+		}
 
-            &:hover {
-                transform: scale(1);
-            }
-        }
+		a, li {
+			@extend %df-aic-jcc;
+			color: var(--theme-font-color);
+			fill: var(--theme-font-color);
+			text-decoration: none;
 
-        a {
-            width: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
+			&:visited {
+				color: var(--theme-font-color);
+			}
+		}
+
+		.icon {
+			width: 32px;
+		}
+	}
 }

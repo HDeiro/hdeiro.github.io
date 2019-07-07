@@ -198,7 +198,7 @@ const paths = {
 // Global Variables
 //####################################
 
-const MODE_PRODUCTION = true;
+const MODE_PRODUCTION = false;
 const JS_COMPRESS_OPTIONS = {
     preserveComments: 'license',
     compress: {
@@ -422,8 +422,8 @@ gulp.task(tasks.server, () => {
 	bsync.init({server: {baseDir: `${path_build}/`}});
 
 	gulp.watch(`${path_source}/**/*.js`, [tasks.js.bundler]).on('change', bsync.reload);
-	gulp.watch(`${path_source}/styles/**/*.css`, [tasks.css.bundler]).on('change', bsync.reload);
-	gulp.watch(`${path_source}/styles/**/*.{scss,sass}`, [tasks.sass.bundler]).on('change', bsync.reload);
+	gulp.watch(`${path_source}/styles/**/*.css`, [tasks.views]).on('change', bsync.reload);
+	gulp.watch(`${path_source}/styles/**/*.{scss,sass}`, [tasks.views]).on('change', bsync.reload);
 	gulp.watch(`${path_source}/**/*.{html,php}`, [tasks.views]).on('change', bsync.reload);
 	gulp.watch(`${path_source}/**/*.json`, [tasks.jsons]).on('change', bsync.reload);
 });
