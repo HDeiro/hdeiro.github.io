@@ -1,19 +1,20 @@
 // Global variables
-const version = "1.0.1";
+const version = "1.0.3";
 const cacheName = `HDeiro-${version}`;
 
 // Elements that may be cached
 const cachable = [
     `/`,
 	`/index.html`,
-	`/images/divider-1-background.jpg`,
-	`/images/divider-2-background.jpg`,
 	`/images/header-background.jpg`,
 	`/images/hugodeiro.jpg`,
 	`/images/favicon.png`,
 	`/fonts/Lobster-Regular.ttf`,
 	`/fonts/OpenSans-Regular.ttf`,
-	`/fonts/OpenSans-Semibold.ttf`
+	`/fonts/OpenSans-Semibold.ttf`,
+	`/data/techskills.json`,
+	`/data/softskills.json`,
+	`/data/portfolio.json`
 ];
 
 // On SW installation

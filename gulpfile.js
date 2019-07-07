@@ -198,7 +198,7 @@ const paths = {
 // Global Variables
 //####################################
 
-const MODE_PRODUCTION = false;
+const MODE_PRODUCTION = true;
 const JS_COMPRESS_OPTIONS = {
     preserveComments: 'license',
     compress: {

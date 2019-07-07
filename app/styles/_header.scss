@@ -13,6 +13,7 @@ header {
 		left: 50%;
 		transform: translateX(-50%);
 		top: 22%;
+		z-index: 2;
 		overflow: hidden;
 
 		&:after {
@@ -38,6 +39,25 @@ header {
 			border-width: 332px 0 0 110px;
 			border-color: transparent transparent transparent var(--theme-color);
 		}
+
+
+		@media (max-width: $responsive-3) {
+			overflow: visible;
+			padding-top: 120px;
+
+			&:before {
+				display: none;
+			}
+
+			&:after {
+				width: 160px;
+				height: 160px;
+				border-radius: 100%;
+				right: 50%;
+				transform: translateX(50%);
+				top: -40px;
+			}
+		}
 	}
 
 	.info-container {
@@ -51,6 +71,7 @@ header {
 			font-size: 48px;
 			color: var(--theme-font-color);
 			margin: 0;
+			text-align: center;
 		}
 
 		.subtitle {
@@ -58,6 +79,11 @@ header {
 			font-size: 18px;
 			color: var(--theme-font-color);
 			margin: 0;
+			text-align: center;
+		}
+
+		@media (max-width: $responsive-3) {
+			align-items: center;
 		}
 	}
 
@@ -83,6 +109,12 @@ header {
 
 		.icon {
 			width: 32px;
+		}
+
+		@media (max-width: $responsive-4) {
+			li {
+				justify-content: center;
+			}
 		}
 	}
 }

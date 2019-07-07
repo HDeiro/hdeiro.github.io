@@ -7,8 +7,8 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <!-- Browser's header background color -->
-    <meta name="theme-color" content="#000000">
-    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="theme-color" content="#4C3F4B">
+    <meta name="msapplication-navbutton-color" content="#4C3F4B">
 
     <!-- Robots info -->
     <meta name="robots" content="index">
@@ -27,25 +27,29 @@
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="no">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4C3F4B">
     <meta name="apple-mobile-web-app-title" content="Hugo Deiró">
     <link rel="apple-touch-icon" href="images/pwa-icons/icon-192x192.png">
 
-    <!-- Custom twitter cardbox
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="site address">
-    <meta name="twitter:title" content="site title">
-    <meta name="twitter:description" content="site description">
-    <meta name="twitter:image" content="images/pwa-icons/icon-512x512.jpg"> -->
+    <!-- Custom twitter cardbox-->
+    <meta name="twitter:card" content="Website de Hugo Deiró">
+    <meta name="twitter:site" content="hugodeiro.com">
+    <meta name="twitter:title" content="Hugo Deiró">
+    <meta name="twitter:description" content="Website de Hugo Deiró">
+    <meta name="twitter:image" content="images/pwa-icons/hugodeiro-512x512.jpg">
 
-    <!-- Custom Facebook cardbox
-    <meta property="og:title" content="page title">
-    <meta property="og:image" content="images/pwa-icons/icon-512x512.jpg">
-    <meta property="og:description" content="site description"> -->
+    <!-- Custom Facebook cardbox-->
+    <meta property="og:title" content="Website de Hugo Deiró">
+    <meta property="og:image" content="images/pwa-icons/hugodeiro-512x512.jpg">
+    <meta property="og:description" content="Website de Hugo Deiró">
 
     <title>Hugo Deiró</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png?v2"/>
 	<link rel="manifest" href="/manifest.json">
+
+	<link rel="preload" as="fetch" crossorigin="crossorigin" href="data/techskills.json">
+	<link rel="preload" as="fetch" crossorigin="crossorigin" href="data/softskills.json">
+	<link rel="preload" as="fetch" crossorigin="crossorigin" href="data/portfolio.json">
 
 	<!-- build:css -->
 		<!-- Add critical CSS references here -->
@@ -53,46 +57,55 @@
 	<!-- endbuild -->
 </head>
 <body>
-    <header>
+    <header id="top">
 		<div class="header-floating-container floating-container">
 			<div class="info-container">
-				<h1 class="title">Hugo Deiró</h1>
-				<h2 class="subtitle">Analista e desenvolvedor de sistemas</h2>
+				<h1 class="title" data-efecss="slideInRight">Hugo Deiró</h1>
+				<h2 class="subtitle" data-efecss="slideInRight">Analista e desenvolvedor de sistemas</h2>
 
 				<ul class="contacts">
-					<li>
-						<a href="mailto:hugodeiro@gmail.com" target="_blank" rel="noreferrer">
+					<li data-efecss="slideInUp">
+						<a href="mailto:hugodeiro@gmail.com" target="_blank" aria-label="E-mail para entrar em contato com Hugo">
 							<div class="icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 							</div>
 							hugodeiro@gmail.com
 						</a>
 					</li>
-					<li>
-						<a href="tel:5571991529968" target="_blank" rel="noreferrer">
+					<li data-efecss="slideInUp" data-animation-delay="200ms">
+						<a href="tel:5571991529968" target="_blank" aria-label="Telefone para entrar em contato com Hugo">
 							<div class="icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
 							</div>
 							+55 (71) 99152-9968
 						</a>
 					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/hdeiro/" target="_blank" rel="noreferrer">
+					<li data-efecss="slideInUp" data-animation-delay="200ms">
+						<a href="https://api.whatsapp.com/send?phone=5571991529968&text=Olá%20Hugo.%20Vim%20falar%20contigo%20através%20do%20teu%20website!"
+							target="_blank" aria-label="WhatsApp para entrar em contato com Hugo">
+							<div class="icon">
+								<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g><g stroke="null" id="svg_4"><path stroke="null" id="ZAP1" fill="#ffffff" d="m22.452975,11.614182c-0.00425,1.84026 -0.403752,3.463768 -1.211256,4.972526c-0.760754,1.423758 -1.81051,2.609514 -3.132267,3.544519c-1.160256,0.820254 -2.431013,1.381257 -3.82077,1.670259c-1.538508,0.318752 -3.077016,0.284752 -4.602774,-0.08075c-0.807504,-0.195501 -1.581008,-0.493003 -2.307762,-0.888255c-0.123251,-0.068 -0.229501,-0.07225 -0.361252,-0.02975c-1.602258,0.514253 -3.204517,1.024255 -4.806775,1.534258c-0.182751,0.0595 -0.361252,0.114751 -0.544003,0.182751c-0.127501,0.04675 -0.136001,0 -0.102001,-0.106251c0.187001,-0.548253 0.369752,-1.096506 0.556753,-1.649009c0.399502,-1.194256 0.799004,-2.388513 1.207006,-3.578519c0.05525,-0.157251 -0.0255,-0.259251 -0.08925,-0.369752c-0.501503,-0.871255 -0.858505,-1.797759 -1.079506,-2.775265c-0.480253,-2.108011 -0.310252,-4.173522 0.497253,-6.175283c0.467502,-1.156006 1.134756,-2.193012 1.98901,-3.111016c1.088006,-1.173006 2.375763,-2.035761 3.86327,-2.613764c1.389757,-0.539753 2.826265,-0.748004 4.305273,-0.658753c2.027261,0.123251 3.87177,0.794754 5.491029,2.018761c2.095261,1.581008 3.412768,3.659269 3.939771,6.239033c0.140251,0.658753 0.191251,1.326007 0.208251,1.87426zm-10.348805,-8.410794c-0.395252,-0.017 -0.858505,0.02975 -1.321757,0.097751c-0.182751,0.0255 -0.361252,0.06375 -0.539753,0.110501c-2.762515,0.701254 -4.747275,2.350262 -5.916031,4.947026c-0.675754,1.500258 -0.858505,3.085516 -0.603503,4.709025c0.199751,1.283507 0.675754,2.465013 1.419507,3.531769c0.08075,0.119001 0.0935,0.221001 0.04675,0.352752c-0.314502,0.922255 -0.620503,1.84876 -0.930755,2.775265c-0.017,0.051 -0.068,0.110501 -0.02125,0.157251c0.04675,0.051 0.106251,-0.00425 0.157251,-0.02125c0.930755,-0.297502 1.86151,-0.590753 2.783765,-0.901005c0.212501,-0.07225 0.365502,-0.03825 0.548253,0.07225c2.086761,1.253757 4.318023,1.585258 6.668285,0.960505c1.785009,-0.471752 3.255517,-1.445008 4.420023,-2.881515c1.126256,-1.389757 1.755259,-2.979266 1.88276,-4.755775c0.097751,-1.364257 -0.114751,-2.690264 -0.658753,-3.956771c-0.684254,-1.593758 -1.751009,-2.868765 -3.191767,-3.81652c-1.411007,-0.926505 -2.970766,-1.402507 -4.743025,-1.381257z"/><path stroke="null" id="ZAP2" fill="#ffffff" d="m7.029644,9.272419c0.017,-0.956255 0.391002,-1.742509 1.122006,-2.354512c0.208251,-0.174251 0.459002,-0.246501 0.735254,-0.199751c0.119001,0.017 0.242251,0.034 0.357002,0.02125c0.289002,-0.02125 0.454752,0.140251 0.544003,0.378252c0.272001,0.714004 0.535503,1.432258 0.803254,2.146261c0.051,0.136001 0.03825,0.259251 -0.0255,0.386752c-0.165751,0.344252 -0.429252,0.612003 -0.692754,0.879755c-0.229501,0.233751 -0.242251,0.310252 -0.085,0.595003c0.760754,1.377007 1.81051,2.448013 3.264017,3.098266c0.07225,0.02975 0.136001,0.08075 0.204001,0.110501c0.182751,0.08925 0.348502,0.08075 0.501503,-0.0765c0.297502,-0.301752 0.573753,-0.624753 0.841504,-0.956255c0.208251,-0.259251 0.306002,-0.297502 0.599253,-0.165751c0.714004,0.331502 1.394007,0.718254 2.086761,1.092256c0.229501,0.123251 0.255001,0.293252 0.221001,0.603503c-0.140251,1.262257 -1.105006,1.83601 -2.205762,2.018761c-0.369752,0.0595 -0.718254,0.0255 -1.066756,-0.085c-1.020005,-0.323002 -2.023011,-0.697004 -2.924015,-1.283507c-0.841504,-0.548253 -1.564008,-1.232506 -2.197262,-2.010261c-0.616253,-0.760754 -1.164506,-1.564008 -1.619259,-2.435263c-0.255001,-0.497253 -0.463252,-1.270757 -0.463252,-1.763759z"/></g></g></svg>
+							</div>
+							+55 (71) 99152-9968
+						</a>
+					</li>
+					<li data-efecss="slideInUp" data-animation-delay="400ms">
+						<a href="https://www.linkedin.com/in/hdeiro/" target="_blank" aria-label="LinkedIn de Hugo">
 							<div class="icon">
 								<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g><path stroke="null" id="linkedinsvg" fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="m18.386785,17.362593l0,-4.442717c0,-2.380298 -1.270757,-3.487943 -2.964846,-3.487943c-1.367107,0 -1.979725,0.752212 -2.321123,1.279861l0,-1.097782l-2.575653,0c0.03414,0.727176 0,7.748582 0,7.748582l2.575653,0l0,-4.327401c0,-0.231012 0.016691,-0.462404 0.08497,-0.627792c0.185872,-0.462783 0.609584,-0.941877 1.320828,-0.941877c0.932394,0 1.304896,0.710486 1.304896,1.751748l0,4.145702l2.575274,0l0,-0.000379zm-10.574972,-8.806155c0.897875,0 1.457387,-0.595549 1.457387,-1.339416c-0.016691,-0.759799 -0.559512,-1.338278 -1.440317,-1.338278s-1.457008,0.578099 -1.457008,1.338278c0,0.743867 0.559133,1.339416 1.423627,1.339416l0.016311,0zm4.188187,14.823472c-6.284746,0 -11.379911,-5.095166 -11.379911,-11.379911c0,-6.285125 5.095166,-11.379911 11.379911,-11.379911s11.379911,5.094786 11.379911,11.379911c0,6.284746 -5.095166,11.379911 -11.379911,11.379911zm-2.90036,-6.017318l0,-7.748582l-2.575274,0l0,7.748582l2.575274,0z"/></g></svg>
 							</div>
 							Meu LinkedIn
 						</a>
 					</li>
-					<li>
-						<a href="https://github.com/hdeiro" target="_blank" rel="noreferrer">
+					<li data-efecss="slideInUp" data-animation-delay="600ms">
+						<a href="https://github.com/hdeiro" target="_blank" aria-label="Github de Hugo">
 							<div class="icon">
 								<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g><path fill="#ffffff" stroke="null" id="githubsvg" d="m12,0.677689c-6.41077,0 -11.608538,5.197768 -11.608538,11.608538c0,5.12975 3.325846,9.480117 7.939061,11.01478c0.580291,0.106291 0.792147,-0.252236 0.792147,-0.558321c0,-0.276338 -0.010634,-1.191734 -0.016302,-2.161002c-3.228058,0.701432 -3.910377,-1.368878 -3.910377,-1.368878c-0.528551,-1.340537 -1.28882,-1.697635 -1.28882,-1.697635c-1.054994,-0.719865 0.080035,-0.705695 0.080035,-0.705695c1.165524,0.080761 1.779145,1.195997 1.779145,1.195997c1.035881,1.774156 2.717917,1.261182 3.378266,0.963599c0.10552,-0.748207 0.405936,-1.261182 0.73687,-1.550261c-2.576914,-0.29332 -5.287734,-1.289523 -5.287734,-5.737679c0,-1.268278 0.452756,-2.302708 1.193866,-3.115396c-0.11833,-0.294748 -0.51794,-1.475871 0.11477,-3.073587c0,0 0.97353,-0.311753 3.19262,1.190329c0.925327,-0.258607 1.917994,-0.386143 2.904969,-0.390405c0.986272,0.004263 1.979619,0.133203 2.906397,0.391811c2.214873,-1.503487 3.189809,-1.190329 3.189809,-1.190329c0.634842,1.599144 0.235232,2.778839 0.116199,3.072181c0.743944,0.812688 1.193163,1.847141 1.193163,3.115396c0,4.459492 -2.715083,5.441502 -5.301202,5.729176c0.418043,0.359933 0.787884,1.065628 0.787884,2.14826c0,1.55169 -0.015599,2.80294 -0.015599,3.185546c0,0.308919 0.21113,0.670257 0.799221,0.556892c4.609701,-1.537496 7.93269,-5.887864 7.93269,-11.01478c0,-6.41077 -5.197768,-11.608538 -11.608538,-11.608538z"/></g></svg>
 							</div>
 							Meu Github
 						</a>
 					</li>
-					<li>
+					<li data-efecss="slideInUp" data-animation-delay="800ms">
 						<div class="icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 						</div>
@@ -103,7 +116,7 @@
 		</div>
 	</header>
 
-	<section id="about">
+	<section id="about" data-efecss="slideInUp">
 		<div class="floating-container">
 			<h2 class="section-title">#whoami</h2>
 
@@ -113,30 +126,48 @@
 			<p>Ah, e eu faço freelas também! <a rel="noreferrer" href="mailto:hugodeiro@gmail.com">#mandafreelas</a></p>
 
 			<div class="buttons">
-				<button class="button">
-					Download do CV
-				</button>
-				<button class="button">
-					Contato
+				<a href="https://www.dropbox.com/sh/f8w0of96ilz1brg/AADDd1ihE4jq_wfjqcthhsYAa?dl=0"
+					target="_blank"  rel="noreferrer">
+					<button class="button" data-efecss="zoomIn" aria-label="Button to download the CV">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+						Download do CV
+					</button>
+				</a>
+
+				<button class="button" data-efecss="zoomIn" onclick="thematize()" aria-label="Button to change the color schema of the website">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle cx="15.5" cy="9.5" r="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path fill="none" d="M0 0h24v24H0V0z"/><circle cx="15.5" cy="9.5" r="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-2.5c2.33 0 4.32-1.45 5.12-3.5h-1.67c-.69 1.19-1.97 2-3.45 2s-2.75-.81-3.45-2H6.88c.8 2.05 2.79 3.5 5.12 3.5z"/></svg>
+					Clica aqui!
 				</button>
 			</div>
 		</div>
 	</section>
 
-	<section id="skills">
+	<section id="techskills-section" data-efecss="slideInUp">
 		<div class="floating-container accent">
 			<h2 class="section-title">#techskills</h2>
 			<div class="skill-container" id="techskills"></div>
 		</div>
 	</section>
 
-	<section id="skills">
+	<section id="softskills-section" data-efecss="slideInUp">
 		<div class="floating-container">
 			<h2 class="section-title">#softskills</h2>
 			<div class="skill-container" id="softskills"></div>
 		</div>
 	</section>
 
+	<section id="portfolio" data-efecss="slideInUp">
+		<div class="floating-container">
+			<h2 class="section-title">#portfolio</h2>
+			<div class="portfolio-container" id="portfolio-items"></div>
+		</div>
+	</section>
+
+	<a href="#top" rel="noreferrer">
+		<button id="fabScrollTop" aria-label="Button to go to top of the page">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+		</button>
+	</a>
 	<!-- build:js -->
 	<!-- Add critical JS references here -->
 	<script src="js/internal-critical.js"></script>

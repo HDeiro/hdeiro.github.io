@@ -44,14 +44,27 @@
 	flex-direction: column;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: whitesmoke;
 	font-family: $font-family-2;
+
+	*, * * {
+		transition: background-color 400ms ease-out;
+		transition: color 400ms ease-out;
+	}
 }
 
 section {
 	@extend %df-aic-jcc;
 	padding-bottom: 32px;
+
+	@media (max-width: $responsive-4) {
+		padding-bottom: 0;
+	}
 }
 
 p {
@@ -59,13 +72,13 @@ p {
 	font-family: $font-family-2;
 	color: var(--theme-base-color);
 	line-height: 1.4em;
+}
 
-	a, a:visited {
-		font-family: $font-family-3;
-		text-decoration: none;
-		color: var(--theme-color);
-		cursor: pointer;
-	}
+a, a:visited {
+	font-family: $font-family-3;
+	text-decoration: none;
+	color: var(--theme-color);
+	cursor: pointer;
 }
 
 .floating-container {
@@ -87,6 +100,11 @@ p {
 			background-color: var(--theme-font-color);
 		}
 	}
+
+	@media (max-width: $responsive-4) {
+		border-radius: 0;
+		box-shadow: none;
+	}
 }
 
 .section-title {
@@ -98,6 +116,8 @@ p {
 }
 
 .button {
+	@extend %df-aic-jcc;
+	display: inline-flex;
 	background-color: var(--theme-color);
 	color: var(--theme-font-color);
 	border: none;
@@ -110,6 +130,11 @@ p {
 
 	&:hover {
 		background-color: var(--theme-color-darkened);
+	}
+
+	svg {
+		fill: var(--theme-font-color);
+		margin-right: 6px;
 	}
 }
 
@@ -124,7 +149,34 @@ p {
 	.loaded {
 		background-color: var(--theme-color);
 		height: 12px;
+		width: 0;
+		transition: width 800ms ease-out;
 		position: absolute;
 		left: 0;
+	}
+}
+
+#fabScrollTop {
+	@extend %df-aic-jcc;
+
+	position: fixed;
+    bottom: 20px;
+    right: 20px;
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	border: none;
+	box-shadow: 0 3px 10px var(--theme-color-darkened);
+	background-color: var(--theme-color);
+	transition: background-color 300ms ease-out;
+	cursor: pointer;
+	outline: none;
+
+	svg {
+		fill: var(--theme-font-color);
+	}
+
+	&:hover {
+		background-color: var(--theme-color-darkened);
 	}
 }

@@ -1,4 +1,4 @@
-#skills {
+#techskills-section, #softskills-section {
 	.skill-container {
 		@extend %df-aic-jcsb-fww;
 	}
@@ -14,6 +14,16 @@
 			@extend %df-aic-jcsb;
 			margin-bottom: 8px;
 			width: 100%;
+		}
+
+		@media (max-width: $responsive-1) {
+			max-width: 350px;
+		}
+		@media (max-width: $responsive-2) {
+			max-width: 320px;
+		}
+		@media (max-width: $responsive-3) {
+			max-width: 100%;
 		}
 	}
 

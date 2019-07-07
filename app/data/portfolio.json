@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Wex Edge",
+        "categories": ["Sistema Web", "Internacional"],
+        "description": "<p>Durange minha estadia na Wex, atuei no desenvolvimento do projeto Wex Edge.</p><p>O Wex Edge é focado em prover soluções de pagamento para hotelaria, combustíveis, fretes, pneus e outros produtos.</p>"
+    },
+    {
+        "name": "Zap",
+        "categories": ["Website", "Ferramenta"],
+        "description": "Uma ferramenta que utiliza a API do WhatsApp para enviar mensagens para as pessoas sem precisar salvar o contato delas. <a rel=\"noreferrer\" href=\"https://zap.hugodeiro.com\" target=\"_blank\">Clique aqui para checar o Zap</a>."
+	},
+    {
+        "name": "Open Projects at IFBA (OPAI)",
+        "categories": ["Landing Page"],
+        "description": "<p>Página da Open Projects at IFBA (OPAI), um grupo criado pelos estudantes do IFBA com intuito de compartilhar conhecimento através de eventos organizados pelos próprios membros.</p><p>Disponível em <a rel=\"noreferrer\" href=\"https://opai.github.io\" target=\"blank\">opai.github.io</a></p>"
+    },
+    {
+        "name": "EFECSS",
+        "categories": ["Biblioteca"],
+        "description": "<p>Uma <i>lib</i> desenvolvida para animações simples utilizando JavaScript e CSS. Existem duas versões, a <a rel=\"noreferrer\" href=\"https://github.com/efecss/efecss-pure-css\" target=\"blank\"><i>pure-css</i></a>, que utiliza apenas classes e a <a rel=\"noreferrer\" href=\"https://github.com/efecss/efecss\" target=\"blank\"><i>default</i></a>, que utiliza JavaScript para fazer outros tipos de controles de animação.</p><p>A versão <i>default</i> também pode ser encontrada nos <a rel=\"noreferrer\" href=\"https://www.npmjs.com/package/efecss\" target=\"blank\">repositórios do NPM</a>.</p>"
+    },
+    {
+        "name": "Weskit",
+        "categories": ["Toolkit"],
+        "description": "<p>O Web Starter Kit (Weskit) é ferramenta desenvolvida para inicialização de novos websites. Essa ferramenta já foi utilizada alguns projetos (inclusive neste website) e obteve ótimos resultados no <a rel=\"noreferrer\" href=\"https://developers.google.com/speed/pagespeed/insights/\" target=\"_blank\">Google PageSpeed Insights</a>.</p><p>O Weskit está disponível no <a rel=\"noreferrer\" href=\"https://github.com/hdeiro/weskit\" target=\"blank\">Github</a>.</p>"
+    },
+    {
+        "name": "Ericsson Revenue Manager (RM)",
+        "categories": ["Sistema Web", "Internacional"],
+        "description": "<p>Atuei nas equipes de desenvolvimento dos sub-módulos Notification Adapter (NTF-A), Case Management Dump Application (CM Dump Application) e Drill Trigger do projeto Revenue Manager da Ericsson durante a minha estadia na Ericsson Inovação S. A. (EISA).</p><p>Em janeiro de 2019 viajei para Kiev - Ucrânia para prestar suporte <i>on site</i> ao cliente acerca dos módulos em que trabalhava durante a fase de implantação. Durante esta estadia atuei com colegas da Ericsson de vários lugares do mundo a fim de integrar os módulos em que trabalhamos separadamente.</p>"
+    },
+    {
+        "name": "Congresso de Metodologia do Ensino de Línguas (CoMEL)",
+        "categories": ["Landing Page"],
+        "description": "<p>O I Congresso de Metodologia do Ensino de Línguas – CoMEL, com o tema Multiplicando para Somar, é resultado de uma capacitação na University of Miami, na Flórida, Estados Unidos. 30 professores de Língua Inglesa da rede pública foram contemplados com bolsas de estudos para passar seis semanas estudando em Miami. Fizeram um curso de 360h sobre Metodologia do Ensino, após terem sido selecionados por meio do Edital no19/2017 para participar do Programa de Desenvolvimento de Professores de Inglês – PDPI, uma iniciativa conjunta da CAPES e FULBRIGHT.</p><p>Disponível em <a rel=\"noreferrer\" href=\"http://dale-ssa.ifba.edu.br/comel\" target=\"blank\">dale-ssa.ifba.edu.br/comel</a></p>"
+    },
+    {
+        "name": "Le Parc",
+        "categories": ["App Android",  "App iOS", "Sistema Web"],
+        "description": "<p>O aplicativo do Le Parc conta com diversas funcionalidades para os moradores do condomínio. Desde o controle de visitantes até o acompanhamento de informações, eventos, classificados e muito mais!</p><p>O aplicativo foi desenvolvido durante o tempo em que trabalhei na IWWA - Agência Digital e está disponível na <a rel=\"noreferrer\" href=\"https://play.google.com/store/apps/details?id=br.com.leparcssa&hl=pt_BR\" target=\"blank\">Google Play</a> e na <a rel=\"noreferrer\" href=\"https://itunes.apple.com/br/app/le-parc-ssa/id1159763443?mt=8\" target=\"blank\">App Store</a>.</p>"
+    },
+    {
+        "name": "Gestores VX Case",
+        "categories": ["App Android", "App iOS"],
+        "description": "<p>O aplicativo Gestores VXCase possui diversas funcionalidades para os gerentes da empresa. Desde a verificação dos produtos até controle de ponto dos colaboradores e muito mais!</p><p>Por se tratar de um aplicativo de uso interno e exclusivo da empresa, o mesmo não se encontra disponível na Google Play e App Store.</p>"
+    },
+    {
+        "name": "Instituto de Auditores Fiscais (IAF)",
+        "categories": ["App Android", "App iOS"],
+        "description": "<p>O aplicativo do IAF apresenta as informações mais recentes relacionadas o Instituto. Seus usuários podem estar sempre atualizados, recebendo um <i>push notification</i> sempre que sair alguma informação de uma categoria sejam de seu interesse.</p><p>Este aplicativo foi desenvolvido durante o tempo em que trabalhei na IWWA - Agência Digital, estando disponível na <a rel=\"noreferrer\" href=\"https://play.google.com/store/apps/details?id=br.org.iaf&hl=pt_BR\" target=\"blank\">Google Play</a> e <a rel=\"noreferrer\" href=\"https://itunes.apple.com/br/app/iaf-instituto-dos-auditores/id1137215515?mt=8\" target=\"blank\">App Store</a></p>"
+    },
+    {
+        "name": "AuraBrasil",
+        "categories": ["App Android", "App iOS"],
+        "description": "<p>O aplicativo da AuraBrasil permite aos seus usuários visualizarem todo catálogo de máquinas disponíveis na empresa, além de permitir que o mesmo possa encontrar a máquina certa para seu ambiente a partir de uma calculadora inteligente, onde são informadas as características do ambiente para que o <i>app</i> possa apresentar os equipamentos que melhor se aplicam a sua situação.</p><p>Este aplicativo foi desenvolvido durante o tempo em que trabalhei na IWWA - Agência Digital, estando disponível na <a rel=\"noreferrer\" href=\"https://play.google.com/store/apps/details?id=com.aurabrasil.app&hl=pt_BR\" target=\"blank\">Google Play</a> e <a rel=\"noreferrer\" href=\"https://itunes.apple.com/br/app/aurabrasil/id1108525914?mt=8\" target=\"blank\">App Store</a></p>"
+    },
+    {
+        "name": "Compartilhe Nassau",
+        "categories": ["Landing Page"],
+        "description": "<p>Um <i>hotsite</i> da Uninassau em que os estudantes podem enviar vídeos com depoimentos sobre a instituição, além de apresentar informações importantes e opiniões de outros usuários. </p><p>Este hotsite foi desenvolvido enquanto eu trabalhei na IWWA - Agência Digital, estando disponível em <a rel=\"noreferrer\" href=\"http://www.compartilhenassau.com.br\" target=\"blank\">compartilhenassau.com.br</a></p>"
+    },
+    {
+        "name": "EducGames",
+        "categories": ["Landing Page"],
+        "description": "<p>Uma <i>landing page</i> para o projeto de extensão EducGames, do Instituto Federal da Bahia (IFBA), que tem por objetivo ensinar através dos jogos.</p><p>Este projeto foi desenvolvido através do Processo N°23279.010987/2016-81, que dispensou licitação para o desenvolvimento de uma página web para o projeto <a rel=\"noreferrer\" href=\"http://educgames.ifba.edu.br\" target=\"blank\">EducGames</a></p>"
+    }
+]
