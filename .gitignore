@@ -6,3 +6,4 @@ npm-debug.log
 .vscode
 package-lock.json
 !app/images/sprites/.gitkeep
+.sass-cache
