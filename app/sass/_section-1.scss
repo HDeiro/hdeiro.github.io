@@ -8,7 +8,7 @@
 	height: 100vh;
 	background-image: url(/images/background.jpg);
 	background-size: cover;
-	background-position: center right;
+	background-position: center;
 
 	position: relative;
 
@@ -113,6 +113,25 @@
 				background: $color-gmail;
 				color: $color-2;
 			}
+		}
+	}
+}
+
+@media #{$media-query-1} {
+	#section-1 {
+		.box-info {
+			&-pre-title {
+				font-size: $font-size-5;
+			}
+
+			&-title {
+				font-size: $font-size-6;
+			}
+		}
+
+		.contact-ways {
+			margin-top: 24px;
+			align-self: center;
 		}
 	}
 }

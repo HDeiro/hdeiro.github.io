@@ -2,6 +2,7 @@ $color-1: #333;
 $color-2: #fefefe;
 $color-3: #4C3F4B;
 $color-4: #f5f5f5;
+$color-5: #EFEFEF;
 
 $color-github: #000;
 $color-linkedin: #0077b5;
@@ -9,7 +10,7 @@ $color-whatsapp: #25d366;
 $color-gmail: #ea4335;
 
 $sides-desktop: 15vw;
-$sides-mobile: 2vw;
+$sides-mobile: 30px;
 
 $font-family-1: 'Open Sans', sans-serif;
 $font-family-2: 'Pacifico', cursive;
@@ -18,5 +19,12 @@ $font-size-1: 32px;
 $font-size-2: 128px;
 $font-size-3: 18px;
 $font-size-4: 14px;
+$font-size-5: 24px;
+$font-size-6: 64px;
 
 $text-shadow-1: 0 0 5px $color-1;
+
+$box-shadow-1: 0 5px 5px rgba(#333, .2);
+
+
+$media-query-1: 'all and (max-width: 600px)';

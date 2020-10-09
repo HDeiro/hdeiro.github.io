@@ -10,5 +10,57 @@
 	],
 	"section4-skills": [
 		"Curious", "Creative", "Collaborative", "Eloquent", "Participative", "Speaks Portugues", "Speaks English", "Organized", "Bad Jokes"
+	],
+	"section5-portfolio": [
+		{
+			"title": "WEX Edge",
+			"tags": ["International", "Web"],
+			"description": "I've been working in the WEX EDGE project, which is focused in provide solutions of payment for hotels, fuel, fleet, tires and oter products"
+		},
+		{
+			"title": "Zap",
+			"tags": ["Website", "Tool"],
+			"description": "It's a tool that leverages WhatsApp API in order to make the contact with other people easier. Using \"Zap\" we can communicate with people without the need of saving their contacts in our agenda.  <a target='_blank' href='https://zap.hugodeiro.com'>Click here to use zap</a>."
+		},
+		{
+			"title": "EFECSS",
+			"tags": ["Lib"],
+			"description": "It's a library developed to make the usage of CSS animations easier. There are two versions, the <a target='_blank' href='https://github.com/HDeiro/efecss-pure-css'>efecss-pure-css</a>, using only CSS and <a target='_blank' href='https://github.com/HDeiro/efecss'>efecss</a> that contains some utilitaries in JavaScript."
+		},
+		{
+			"title": "Weskit",
+			"tags": ["Framework"],
+			"description": "The Web Starter Kit (Weskit) is a tool developed to make the process of landing page creation easier. Currently the Weskit is available in <a target='_blank' href='https://github.com/hdeiro/weskit'>Github</a>."
+		},
+		{
+			"title": "Ericsson Revenue Manager",
+			"tags": ["Integration System"],
+			"description": "During my staying at \"Ericsson Inovação S. A.\", a subsidiary of Ericsson, I've been part of the development team of some modules of the Revenue Manager Project. <strong>In january of 2019 I've traveled to Kiev, in Ukraine, to provide on site support about the integration of the modules in which I've worked</strong>"
+		},
+		{
+			"title": "Congresso de Metodologia do Ensino de Línguas (CoMEL)",
+			"tags": ["Landing Page"],
+			"description": "I've developed a Landing Page for the first and second Congress of Language Teaching Congress, organized by the Federal Institute of Bahia and other important institutions of Brazil"
+		},
+		{
+			"title": "Le Parc",
+			"tags": ["App Android", "App IOS", "Sistema Web"],
+			"description": "The Le Parc application has several features for residents of the condominium. From visitor control to monitoring information, events and much more! The platform has been developed during the time I've worked at IWWA and it's available in <a target='_blank' href='https://play.google.com/store/apps/details?id=br.com.leparcssa&hl=pt_BR'>Google Play</a> and <a target='blank' href='https://apps.apple.com/br/app/le-parc-ssa/id1159763443'>App Store</a>"
+		},
+		{
+			"title": "Gestores VXCase",
+			"tags": ["App Android", "App IOS"],
+			"description": "The app \"Gestores VXCase\" has been developed during the time I've worked at VXCase. It has several features to make the work easier for the managers of the company. Considering it's an internal app, it's not available at Google Play Store or App Store."
+		},
+		{
+			"title": "AuraBrasil",
+			"tags": ["App Android", "App IOS"],
+			"description": "The \"AuraBrasil\" app allows users to see all machinery catalog of the company and also provide some information of their construction in order to find the most appropriate machine to help on that. It has been developed during the time I've worked at IWWA and it's available in the <a target='blank' href='https://play.google.com/store/apps/details?id=com.aurabrasil.app&hl=pt_BR'>Google Play</a> and <a target='blank' href='https://apps.apple.com/br/app/aurabrasil/id1108525914'>App Store</a> "
+		},
+		{
+			"title": "EducGames",
+			"tags": ["Landing Page"],
+			"description": "It has been a Landing Page developed to the project EducGames of the Federal Institute of Bahia (IFBA), that aims to gamify the learning."
+		}
 	]
 }

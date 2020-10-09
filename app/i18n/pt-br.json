@@ -10,5 +10,57 @@
 	],
 	"section4-skills": [
 		"Curioso", "Criativo", "Colaborativo", "Eloquente", "Participativo", "Falo Inglês", "Sou organizado", "Piadas Ruins"
+	],
+	"section5-portfolio": [
+		{
+			"title": "WEX Edge",
+			"tags": ["Internacional", "Sistema Web"],
+			"description": "Tenho trabalhado no projeto Wex EDGE, focado em prover soluções de pagamento para hotelaria, combustíveis, fretes, pneus e outros produtos"
+		},
+		{
+			"title": "Zap",
+			"tags": ["Website", "Ferramenta"],
+			"description": "Uma ferramenta que utiliza a API do WhatsApp para facilitar o envio de mensagens a pessoas sem a necessidade de salvar os contatos delas em sua agenda. <a target='_blank' href='https://zap.hugodeiro.com'>Clique aqui para usar o zap</a>."
+		},
+		{
+			"title": "EFECSS",
+			"tags": ["Lib"],
+			"description": "Uma biblioteca desenvolvida para facilitar o processo de utilização de animações. Existem duas versões, a <a target='_blank' href='https://github.com/HDeiro/efecss-pure-css'>efecss-pure-css</a>, que contém basicamente classes do CSS e a <a target='_blank' href='https://github.com/HDeiro/efecss'>efecss</a> que contém alguns utilitários em JavaScript."
+		},
+		{
+			"title": "Weskit",
+			"tags": ["Framework"],
+			"description": "O Web Starter Kit (Weskit) é uma ferramenta desenvolvida para facilitar a criação de landing pages. Atualmente, o weskit está disponível no <a target='_blank' href='https://github.com/hdeiro/weskit'>Github</a>."
+		},
+		{
+			"title": "Ericsson Revenue Manager",
+			"tags": ["Internacional", "Sistema de Integração"],
+			"description": "Durante minha estadia na Ericsson Inovação S. A., uma subsidiária da Ericsson, eu atuei no desenvolvimento de alguns módulos do projeto Revenue Manager. <strong>Em janeiro de 2019 fui para Kiev - Ucrânia, prestar suporte on site ao cliente sobre os módulos nos quais eu atuei</strong>."
+		},
+		{
+			"title": "Congresso de Metodologia do Ensino de Línguas (CoMEL)",
+			"tags": ["Landing Page"],
+			"description": "Desenvolvi a Landing Page do I e II Congresso de Metodologia do Ensino de Línguas (CoMEL), organizado pelo Instituto Federal da Bahia e outras importantes instituições do Brasil."
+		},
+		{
+			"title": "Le Parc",
+			"tags": ["App Android", "App IOS", "Sistema Web"],
+			"description": "O aplicativo do Le Parc conta com diversas funcionalidades para moradores do condomínio. Desde o controle de visitantes até o acompanhamento de informações, eventos, classificados e muito mais! A plataforma foi desenvolvida durante o tempo em que trabalhei na IWWA e está disponível em <a target='_blank' href='https://play.google.com/store/apps/details?id=br.com.leparcssa&hl=pt_BR'>Google Play</a> and <a target='blank' href='https://apps.apple.com/br/app/le-parc-ssa/id1159763443'>App Store</a>"
+		},
+		{
+			"title": "Gestores VXCase",
+			"tags": ["App Android", "App IOS"],
+			"description": "O aplicativo Gestores VXCase disponibiliza diversas funcionalidades úteis para os gerentes da empresa como verificação de produtos, controle de ponto de colaboradores e muito mais. Por se tratar de um aplicativo interno e exclusivo da VXCase esta aplicação não está disponível na Google Play e/ou App Store."
+		},
+		{
+			"title": "AuraBrasil",
+			"tags": ["App Android", "App IOS"],
+			"description": "O aplicativo da AuraBrasil permite aos seus usuários visualizarem todo catálogo de máquinas disponíveis na empresa, além de permitir que o mesmo possa encontrar a máquina certa para o seu ambiente. Este aplicativo foi desenvolvido durante o período em que eu trabalhei na IWWA, estando disponível na <a target='blank' href='https://play.google.com/store/apps/details?id=com.aurabrasil.app&hl=pt_BR'>Google Play</a> e <a target='blank' href='https://apps.apple.com/br/app/aurabrasil/id1108525914'>App Store</a>"
+		},
+		{
+			"title": "EducGames",
+			"tags": ["Landing Page"],
+			"description": "Desenvolvida para o projeto EducGames, do Instituto Federal da Bahia (IFBA), que tem por objetivo ensinar através dos jogos. Este projeto foi desenvolvido no ano de 2016 através do Processo N°23279.010987/2016-81, que dispensava licitação para o desenvolvimento desta página web."
+		}
 	]
 }

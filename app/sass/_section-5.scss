@@ -1,0 +1,63 @@
+@import './references';
+@import './placeholders';
+
+#section-5 {
+	background: $color-5;
+	padding: 60px $sides-desktop;
+
+	.title {
+		color: $color-3;
+	}
+
+	.portfolio {
+		@extend %df-aifs-jcfs;
+
+		flex-wrap: wrap;
+
+		.card {
+			padding: 24px;
+			background: $color-2;
+			font-family: $font-family-1;
+			border-radius: 6px;
+			margin-bottom: 32px;
+			box-shadow: $box-shadow-1;
+			width: 100%;
+
+			&-title {
+				color: $color-3;
+				font-size: $font-size-3;
+				font-weight: bold;
+				margin-bottom: 12px;
+			}
+
+			&-tags {
+				@extend %df-aifs-jcfs;
+
+				margin-bottom: 12px;
+
+				.tag {
+					background: $color-3;
+					color: $color-2;
+					padding: 6px 12px;
+					border-radius: 6px;
+					margin-right: 12px;
+					font-size: $font-size-4;
+					font-weight: 600;
+				}
+			}
+
+			&-description {
+				font-size: $font-size-4;
+				color: $color-3;
+				line-height: $font-size-4 * 1.8;
+
+				a {
+					text-decoration: none;
+					color: $color-3;
+					font-weight: 600;
+				}
+			}
+		}
+
+	}
+}

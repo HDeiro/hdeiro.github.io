@@ -12,6 +12,10 @@ body {
 	overflow-x: hidden;
 }
 
+strong {
+	font-weight: bolds;
+}
+
 section {
 	width: 100vw;
 	height: fit-content;
@@ -24,7 +28,6 @@ section {
 		margin-bottom: 24px;
 	}
 }
-
 
 .check-next {
 	@extend %df-aic-jcc;
@@ -42,5 +45,11 @@ section {
 	&:hover {
 		background: $color-2;
 		color: $color-1;
+	}
+}
+
+@media #{$media-query-1} {
+	#section-2, #section-3, #section-4, #section-5 {
+		padding: 30px $sides-mobile !important;
 	}
 }

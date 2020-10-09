@@ -6,7 +6,7 @@ window.onload = () => {
 function loadAsyncCSS() {
 	[
 		'https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap',
-		'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&display=swap',
+		'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
 		'/non-critical.css'
 	].forEach(href => {
 		const myCSS = document.createElement( "link" );
@@ -32,6 +32,11 @@ function loadText() {
 				if (itsJustAString) {
 					element.innerHTML = value;
 				} else {
+					if (key === 'section5-portfolio') {
+						parsePortfolio(value, element);
+						return;
+					}
+
 					value.forEach(valueItem => {
 						const node 	   = document.createElement('div');
 						node.innerHTML = valueItem;
@@ -40,6 +45,37 @@ function loadText() {
 				}
 			}
 		}));
+}
+
+function parsePortfolio(data, elementContainer) {
+	console.log(data, elementContainer, 'ok');
+
+	data.forEach(item => {
+		const card = document.createElement('div');
+		card.classList.add('card');
+
+		const title = document.createElement('div');
+		title.classList.add('card-title');
+		title.innerHTML = item.title;
+		card.appendChild(title);
+
+		const tags = document.createElement('div');
+		tags.classList.add('card-tags');
+		item.tags.forEach(tagText => {
+			const tag = document.createElement('div');
+			tag.classList.add('tag');
+			tag.innerHTML = tagText;
+			tags.appendChild(tag);
+		});
+		card.appendChild(tags);
+
+		const description = document.createElement('div');
+		description.classList.add('card-description');
+		description.innerHTML = item.description;
+		card.appendChild(description);
+
+		elementContainer.appendChild(card);
+	})
 }
 
 
