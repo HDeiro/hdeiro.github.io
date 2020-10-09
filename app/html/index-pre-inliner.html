@@ -18,21 +18,30 @@
 
     <title>Hugo Deiró</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png?v2"/>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap" rel="stylesheet">
 
-	<link rel="preload" as="fetch" crossorigin="crossorigin" href="i18n/pt-br.json">
-	<link rel="preload" as="fetch" crossorigin="crossorigin" href="i18n/en-us.json">
+	<link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap">
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap">
 
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<script src="app.js"></script>
+	<link rel="preconnect" href="/non-critical.css">
+	<link rel="dns-prefetch" href="/non-critical.css">
+
+	<link rel="preconnect" as="fetch" crossorigin="crossorigin" href="i18n/pt-br.json">
+	<link rel="dns-prefetch" as="fetch" crossorigin="crossorigin" href="i18n/pt-br.json">
+
+	<link rel="preconnect" as="fetch" crossorigin="crossorigin" href="i18n/en-us.json">
+	<link rel="dns-prefetch" as="fetch" crossorigin="crossorigin" href="i18n/en-us.json">
+
+	<link rel="preconnect" as="fetch" crossorigin="crossorigin" href="/images/background.jpg">
+	<link rel="dns-prefetch" as="fetch" crossorigin="crossorigin" href="/images/background.jpg">
 </head>
 <body>
 	<section id="section-1">
 		<div class="box-info">
 			<div class="box-info-pre-title" id="section1-hey"></div>
-			<div class="box-info-title">Hugo Deiró</div>
+			<div class="box-info-title" id="section1-name"></div>
 			<div class="contact-ways">
 				<a href="https://github.com/hdeiro" target="_blank">
 					<div class="fa fa-github"></div>
@@ -75,13 +84,18 @@
 			</a>
 		</div>
 	</section>
+
 	<section id="section-3">
 		<div class="title">#techskills</div>
 		<div class="skills" id="section3-skills"></div>
 	</section>
+
 	<section id="section-4">
 		<div class="title">#otherskills</div>
 		<div class="skills" id="section4-skills"></div>
 	</section>
+
+	<link rel="stylesheet" href="styles.css">
+	<script src="app.js"></script>
 </body>
 </html>

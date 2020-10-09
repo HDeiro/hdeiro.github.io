@@ -1,4 +1,23 @@
 window.onload = () => {
+	this.loadAsyncCSS();
+	this.loadText();
+}
+
+function loadAsyncCSS() {
+	[
+		'https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap',
+		'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&display=swap',
+		'/non-critical.css'
+	].forEach(href => {
+		const myCSS = document.createElement( "link" );
+		myCSS.rel = "stylesheet";
+		myCSS.href = href;
+		// insert it at the end of the head in a legacy-friendly manner
+		document.head.insertBefore(myCSS, document.head.childNodes[document.head.childNodes.length - 1].nextSibling );
+	})
+}
+
+function loadText() {
 	const language = navigator.language === 'pt-BR' ? 'pt-br' : 'en-us';
 
 	fetch(`i18n/${language}.json`)
@@ -20,8 +39,7 @@ window.onload = () => {
 					});
 				}
 			}
-		}))
-
+		}));
 }
 
 
