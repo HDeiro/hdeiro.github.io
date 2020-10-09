@@ -39,6 +39,7 @@
 	.box-info-pre-title {
 		font-size: $font-size-1;
 		font-family: $font-family-1;
+		color: $color-2;
 		margin-bottom: 16px;
 		text-shadow: $text-shadow-1;
 	}
@@ -48,6 +49,7 @@
 		font-size: $font-size-2;
 		margin-bottom: 16px;
 		text-shadow: $text-shadow-1;
+		color: $color-2;
 	}
 
 	.contact-ways {
@@ -70,6 +72,7 @@
 		font-size: $size - 15px;
 		border-radius: 100%;
 		margin-left: 12px;
+		margin-bottom: 12px;
 		cursor: pointer;
 		transition: background 300ms ease-out, color 300ms ease-out;
 
