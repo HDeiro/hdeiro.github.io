@@ -28,6 +28,9 @@
 }
 
 .box-info {
+	@extend %df-aifs-jcfs;
+
+	flex-direction: column;
 	padding: 16px;
 	color: $color-2;
 	margin: 16px 0 0 16px;
@@ -38,11 +41,78 @@
 		font-size: $font-size-1;
 		font-family: $font-family-1;
 		margin-bottom: 16px;
+		text-shadow: $text-shadow-1;
 	}
+
 	.box-info-title {
 		font-family: $font-family-2;
 		font-size: $font-size-2;
 		margin-bottom: 16px;
 		text-shadow: $text-shadow-1;
+	}
+
+	.contact-ways {
+		align-self: flex-end;
+	}
+}
+
+.contact-ways {
+	a {
+		text-decoration: none;
+	}
+
+	div {
+		$size: 48px;
+
+		@extend %dif-aic-jcc;
+
+		height: $size;
+		width: $size;
+		font-size: $size - 15px;
+		border-radius: 100%;
+		margin-left: 12px;
+		cursor: pointer;
+		transition: background 300ms ease-out, color 300ms ease-out;
+
+		&.fa-github {
+			background: $color-2;
+			color: $color-github;
+
+			&:hover {
+				background: $color-github;
+				color: $color-2;
+			}
+		}
+
+		&.fa-linkedin {
+			background: $color-2;
+			color: $color-linkedin;
+
+			&:hover {
+				background: $color-linkedin;
+				color: $color-2;
+			}
+		}
+
+		&.fa-whatsapp {
+			background: $color-2;
+			color: $color-whatsapp;
+
+			&:hover {
+				background: $color-whatsapp;
+				color: $color-2;
+			}
+		}
+
+		&.fa-envelope {
+			background: $color-2;
+			color: $color-gmail;
+			font-size: $size - 20px;
+
+			&:hover {
+				background: $color-gmail;
+				color: $color-2;
+			}
+		}
 	}
 }

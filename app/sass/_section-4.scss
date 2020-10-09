@@ -1,0 +1,24 @@
+@import './references';
+@import './placeholders';
+
+#section-4 {
+	background: $color-2;
+	padding: 60px $sides-desktop;
+
+	.skills {
+		@extend %df-aifs-jcfs;
+
+		flex-wrap: wrap;
+
+		div {
+			padding: 6px 12px;
+			background: $color-3;
+			color: $color-2;
+			font-family: $font-family-1;
+			font-size: $font-size-3;
+			border-radius: 4px;
+			font-weight: 600;
+			margin: 0 12px 12px 0;
+		}
+	}
+}

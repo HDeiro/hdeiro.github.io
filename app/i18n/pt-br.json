@@ -1,0 +1,13 @@
+{
+	"section1-hey": "Olá, eu sou",
+	"section2-content-1": "Eu sou um Engenheiro de Software que está atualmente morando em Salvador-BA. Sou apaixonado pelo que faço e sempre fico muito feliz quando vejo que os usuários do mundo real são positivamente impactados por algum projeto em que eu trabalhei!",
+	"section2-content-2": "Atualmente sou estudante do programa de mestrado em Engenharia de Sistemas e Produtos do Instituto Federal da Bahia (PPGESP-IFBA).",
+	"section2-content-3": "Atualmente eu estou atuando como Engenheiro de Software Sênior na WEX, uma empresa norte americana que atua como provedora de pagamentos e gerenciadora de informações para o setor de frotas de veículos dos Estados Unidos.",
+	"section2-content-4": "Se precisar falar comigo, pode entrar em contato através de um dos meios abaixo:",
+	"section3-skills": [
+		"Angular", "JavaScript", "Node", "Java", "SQL", "SASS", "HTML", "CSS", "Performance Web", "Arquitetura de Software", "Padrões de Projetos", "Apache Kafka", "Git", "Scrum", "Kanban"
+	],
+	"section4-skills": [
+		"Curioso", "Criativo", "Colaborativo", "Eloquente", "Participativo", "Falo Inglês", "Sou organizado", "Piadas Ruins"
+	]
+}

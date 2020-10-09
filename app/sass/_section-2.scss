@@ -1,17 +1,8 @@
-@import './animations';
 @import './references';
 
 #section-2 {
 	background: $color-4;
-	padding: 30px $sides-desktop;
-
-	.title {
-		font-size: $font-size-1;
-		font-family: $font-family-1;
-		font-weight: bold;
-		color: $color-3;
-		margin-bottom: 16px;
-	}
+	padding: 60px $sides-desktop;
 
 	.content {
 		font-size: $font-size-3;
