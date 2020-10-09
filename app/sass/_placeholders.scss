@@ -1,0 +1,19 @@
+%allbsolute {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+%df-aifs-jcfs {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+%df-aic-jcc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

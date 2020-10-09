@@ -1,0 +1,48 @@
+@import './references';
+@import './placeholders';
+
+#section-1 {
+	@extend %df-aic-jcc;
+
+	flex-direction: column;
+	height: 100vh;
+	background-image: url(/images/background.jpg);
+	background-size: cover;
+	background-position: center right;
+
+	position: relative;
+
+	&::before {
+		@extend %allbsolute;
+
+		content: ' ';
+
+		background: rgba($color-2, .1)
+	}
+
+	.check-next {
+		position: absolute;
+		bottom: 50px;
+		left: calc(50% - 25px);
+	}
+}
+
+.box-info {
+	padding: 16px;
+	color: $color-2;
+	margin: 16px 0 0 16px;
+	border-radius: 4px;
+	z-index: 2;
+
+	.box-info-pre-title {
+		font-size: $font-size-1;
+		font-family: $font-family-1;
+		margin-bottom: 16px;
+	}
+	.box-info-title {
+		font-family: $font-family-2;
+		font-size: $font-size-2;
+		margin-bottom: 16px;
+		text-shadow: $text-shadow-1;
+	}
+}

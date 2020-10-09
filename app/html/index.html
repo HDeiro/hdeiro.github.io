@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=5">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Browser's header background color -->
+    <meta name="theme-color" content="#4C3F4B">
+    <meta name="msapplication-navbutton-color" content="#4C3F4B">
+
+    <!-- Site info -->
+    <meta name="description" content="Hugo Deiró, Analista e Desenvolvedor de Sistemas">
+    <meta name="keywords" content="Hugo Deiró, Analista e Desenvolvedor de Sistemas">
+    <meta name="author" content="Hugo Deiró">
+    <meta name="copyright" content="Hugo Deiró">
+
+    <title>Hugo Deiró</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png?v2"/>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap" rel="stylesheet">
+
+	<link rel="preload" as="fetch" crossorigin="crossorigin" href="i18n/pt-br.json">
+	<link rel="preload" as="fetch" crossorigin="crossorigin" href="i18n/en-us.json">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="app.js"></script>
+</head>
+<body>
+	<section id="section-1">
+		<div class="box-info">
+			<div class="box-info-pre-title">Hey, I'm</div>
+			<div class="box-info-title">Hugo Deiró</div>
+		</div>
+
+		<div class="check-next" onclick="navigateTo(document.querySelector('#section-2'))">
+			<div class="fa fa-chevron-down bounce"></div>
+		</div>
+	</section>
+
+	<section id="section-2">
+		<!-- <div class="avatar"></div> -->
+		<div class="title">#whoami</div>
+
+		<div class="content">I'm a software engineer currently based in Salvador - BA (Brazil). I have a passion about what I do and I love to see when users in the real world are positively impacted by something in which I've worked in.</div>
+
+		<div class="content">Currently I'm a student in the Masters Program in Systems and Products Engineering Program at the Federal Institute of Bahia.</div>
+
+		<div class="content">Professionally, I'm currently working at WEX, an north american company that is a provider of payment processing and information management services to the United States commercial and government vehicle fleet industry.</div>
+	</section>
+</body>
+</html>

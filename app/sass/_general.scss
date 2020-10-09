@@ -1,0 +1,38 @@
+@import './references';
+@import './placeholders';
+@import './animations';
+
+html, body, body * {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+section {
+	width: 100vw;
+	height: fit-content;
+}
+
+
+.check-next {
+	@extend %df-aic-jcc;
+
+	$size: 50px;
+
+	color: $color-2;
+	width: $size;
+	height: $size;
+	border: 2px solid $color-2;
+	border-radius: 100%;
+	transition: background 300ms ease-out;
+	cursor: pointer;
+
+	&:hover {
+		background: $color-2;
+		color: $color-1;
+	}
+}
