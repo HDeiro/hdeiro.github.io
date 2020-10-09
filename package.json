@@ -12,11 +12,14 @@
 		"styles:watch": "nodemon --quiet -e scss -x \"npm run styles:build\"",
 		"html:build": "html-minifier --input-dir ./app --output-dir ./dist --collapse-whitespace",
 		"html:watch": "nodemon --quiet -e html --ignore dist/* -x \"npm run html:build\"",
+		"scripts:copy": "copy-assets app dist --ext=.js",
 		"scripts:watch": "nodemon --quiet -e js --ignore dist/* -x \"npm run scripts:concat\"",
-		"scripts:watch:no-concat": "nodemon --quiet -e js --ignore dist/* -x \"copy-assets app dist --ext=.js\"",
+		"scripts:watch:no-concat": "nodemon --quiet -e js --ignore dist/* -x \"npm run scripts:copy\"",
 		"scripts:concat": "concat-glob-cli -f app/**/*.js -o dist/app.js",
 		"scripts:uglify": "uglifyjs-folder dist --each --extension .js -o dist",
-		"copy:assets": "copy-assets app dist --exts=.json,.png,.jpg,.gif"
+		"copy:assets": "copy-assets app dist --exts=.json,.png,.jpg,.gif,.txt",
+		"build:all": "rimraf ./dist/* && npm-run-all -p html:build styles:build",
+		"build:prod:concat": "npm-run-all -s build:all copy:assets scripts:concat scripts:uglify"
 	},
 	"repository": {
 		"type": "git",
@@ -36,6 +39,8 @@
 		"html-minifier": "^4.0.0",
 		"node-sass": "^4.14.1",
 		"nodemon": "^2.0.4",
+		"npm-run-all": "^4.1.5",
+		"rimraf": "^3.0.2",
 		"uglifyjs-folder": "^2.0.0"
 	},
 	"dependencies": {}
