@@ -1,3 +1,3 @@
 (() => {
-	console.log('oaskdokasdasdasd');
+	console.log('test');
 })();
