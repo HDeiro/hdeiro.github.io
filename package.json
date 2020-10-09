@@ -4,10 +4,19 @@
 	"description": "",
 	"main": "",
 	"scripts": {
-		"start": "npm run dev",
-		"dev": "browser-sync start --server 'app' 'dist' --files 'app' 'dist'",
+		"start": "npm run dev:concat",
+		"dev:concat": "concurrently \"npm run server\" \"npm run styles:watch\" \"npm run html:watch\" \"npm run scripts:watch\"",
+		"dev:no-concat": "concurrently \"npm run server\" \"npm run styles:watch\" \"npm run html:watch\" \"npm run scripts:watch:no-concat\"",
+		"server": "browser-sync start --server 'dist' --files 'dist'",
 		"styles:build": "node-sass app/ -o dist/css --output-style compressed",
-		"styles:watch": "nodemon -e scss -x \"npm run styles:build\""
+		"styles:watch": "nodemon -e scss -x \"npm run styles:build\"",
+		"html:build": "html-minifier --input-dir ./app --output-dir ./dist --collapse-whitespace",
+		"html:watch": "nodemon -e html --ignore dist/* -x \"npm run html:build\"",
+		"scripts:watch": "nodemon -e js --ignore dist/* -x \"npm run scripts:concat\"",
+		"scripts:watch:no-concat": "nodemon -e js --ignore dist/* -x \"copy-assets app dist --ext=.js\"",
+		"scripts:concat": "concat-glob-cli -f app/**/*.js -o dist/app.js",
+		"scripts:uglify": "uglifyjs-folder dist --each --extension .js -o dist",
+		"copy:assets": "copy-assets app dist --exts=.json,.png,.jpg,.gif"
 	},
 	"repository": {
 		"type": "git",
@@ -21,8 +30,13 @@
 	"homepage": "https://github.com/HDeiro/weskit#readme",
 	"devDependencies": {
 		"browser-sync": "^2.26.12",
+		"concat-glob-cli": "^0.1.0",
+		"concurrently": "^5.3.0",
+		"copy-assets": "^1.0.2",
+		"html-minifier": "^4.0.0",
 		"node-sass": "^4.14.1",
-		"nodemon": "^2.0.4"
+		"nodemon": "^2.0.4",
+		"uglifyjs-folder": "^2.0.0"
 	},
 	"dependencies": {}
 }
