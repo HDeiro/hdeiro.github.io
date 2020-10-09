@@ -113,6 +113,17 @@
 				color: $color-2;
 			}
 		}
+
+		&.fa-file {
+			background: $color-2;
+			color: $color-cv;
+			font-size: $size - 20px;
+
+			&:hover {
+				background: $color-cv;
+				color: $color-2;
+			}
+		}
 	}
 }
 
