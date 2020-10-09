@@ -45,5 +45,7 @@
 		"rimraf": "^3.0.2",
 		"uglifyjs-folder": "^2.0.0"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"effecss-pure-css": "^1.0.3"
+	}
 }

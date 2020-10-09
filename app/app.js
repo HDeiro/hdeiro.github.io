@@ -40,6 +40,8 @@ function loadText() {
 					value.forEach(valueItem => {
 						const node 	   = document.createElement('div');
 						node.innerHTML = valueItem;
+						node.classList.add('zoom-in');
+						node.style.animationDelay = getRandomDelay();
 						element.appendChild(node);
 					});
 				}
@@ -47,12 +49,17 @@ function loadText() {
 		}));
 }
 
-function parsePortfolio(data, elementContainer) {
-	console.log(data, elementContainer, 'ok');
+function getRandomDelay() {
+	const options = ['200ms', '400ms', '600ms'];
+	const index = Math.floor(Math.random() * (options.length + 1));
+	return options[index];
+}
 
+function parsePortfolio(data, elementContainer) {
 	data.forEach(item => {
 		const card = document.createElement('div');
 		card.classList.add('card');
+		card.classList.add('slide-up-in');
 
 		const title = document.createElement('div');
 		title.classList.add('card-title');

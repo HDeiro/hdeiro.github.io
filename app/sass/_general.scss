@@ -48,6 +48,23 @@ section {
 	}
 }
 
+.contact-ways {
+	.fa {
+		&-github {
+			animation-delay: 400ms;
+		}
+		&-linkedin {
+			animation-delay: 600ms;
+		}
+		&-whatsapp {
+			animation-delay: 800ms;
+		}
+		&-envelope {
+			animation-delay: 1000ms;
+		}
+	}
+}
+
 @media #{$media-query-1} {
 	#section-2, #section-3, #section-4, #section-5 {
 		padding: 30px $sides-mobile !important;
