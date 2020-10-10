@@ -1,10 +1,10 @@
 {
 	"section1-hey": "Hey, I'm",
 	"section1-name": "Hugo Deiró",
-	"section2-content-1": "I'm a software engineer currently based in Salvador - BA (Brazil). I have a passion about what I do and I love to see when users in the real world are positively impacted by some project in which I've worked in!",
-	"section2-content-2": "Currently I'm a student in the Masters Program in Systems and Products Engineering Program at the Federal Institute of Bahia.",
-	"section2-content-3": "Professionally, I'm currently working as a Senior Software Engineer at WEX, a North American company that is a provider of payment processing and information management services to the United States commercial and government vehicle fleet industry.",
-	"section2-content-4": "If you need to talk with me, please reach me out in one of my contacts (below):",
+	"section2-content-1": "I am a software engineer based in Salvador, Brazil. I am passionate about my work and I enjoy seeing  users in the real world being positively impacted by projects I've worked on!",
+	"section2-content-2": "I am a graduate student in the Masters Program in Systems and Products Engineering  at the Federal Institute of Bahia.",
+	"section2-content-3": "Professionally, I  work as a Senior Software Engineer at WEX, a North American financial services company which  provides payment processing and information management services to the United States commercial and government fleet industry.",
+	"section2-content-4": "If you would like to connect, feel free to reach out to me.",
 	"section3-skills": [
 		"Angular", "JavaScript", "Node", "Java", "SQL", "HTML", "CSS", "Web Performance", "SASS", "Software Architecture", "Design Patterns", "Apache Kafka", "Git", "Scrum", "Kanban"
 	],
@@ -15,7 +15,7 @@
 		{
 			"title": "WEX Edge",
 			"tags": ["International", "Web"],
-			"description": "I've been working in the WEX EDGE project, which is focused in provide solutions of payment for hotels, fuel, fleet, tires and oter products"
+			"description": "I’ve been working on the WEX EDGE product, which is focused on providing purchase and payment solutions for hotels, fuel, tires, automotive services and other fleet relevant products and services."
 		},
 		{
 			"title": "Zap",
