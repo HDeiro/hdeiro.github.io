@@ -1,9 +1,9 @@
 {
 	"section1-hey": "Hey, I'm",
 	"section1-name": "Hugo Deiró",
-	"section2-content-1": "I am a software engineer based in Salvador, Brazil. I am passionate about my work and I enjoy seeing  users in the real world being positively impacted by projects I've worked on!",
-	"section2-content-2": "I am a graduate student in the Masters Program in Systems and Products Engineering  at the Federal Institute of Bahia.",
-	"section2-content-3": "Professionally, I  work as a Senior Software Engineer at WEX, a North American financial services company which  provides payment processing and information management services to the United States commercial and government fleet industry.",
+	"section2-content-1": "I am a software engineer based in Salvador, Brazil. I am passionate about my work and I enjoy seeing users in the real world being positively impacted by projects I've worked on!",
+	"section2-content-2": "I am a graduate student in the Masters Program in Systems and Products Engineering at the Federal Institute of Bahia.",
+	"section2-content-3": "Professionally, I work as a Senior Software Engineer at WEX, a U.S.-based, global financial services company, which provides payment processing and information management services to the  fleet industry.",
 	"section2-content-4": "If you would like to connect, feel free to reach out to me.",
 	"section3-skills": [
 		"Angular", "JavaScript", "Node", "Java", "SQL", "HTML", "CSS", "Web Performance", "SASS", "Software Architecture", "Design Patterns", "Apache Kafka", "Git", "Scrum", "Kanban"
@@ -20,47 +20,47 @@
 		{
 			"title": "Zap",
 			"tags": ["Website", "Tool"],
-			"description": "It's a tool that leverages WhatsApp API in order to make the contact with other people easier. Using \"Zap\" we can communicate with people without the need of saving their contacts in our agenda.  <a target='_blank' href='https://zap.hugodeiro.com'>Click here to use zap</a>."
+			"description": "Zap is a tool that leverages the WhatsApp API to make connecting with others  easier. Using Zap, we can communicate with people without needing to save their contact information. <a target='_blank' href='https://zap.hugodeiro.com'>Click here to use zap</a>."
 		},
 		{
 			"title": "EFECSS",
 			"tags": ["Lib"],
-			"description": "It's a library developed to make the usage of CSS animations easier. There are two versions, the <a target='_blank' href='https://github.com/HDeiro/efecss-pure-css'>efecss-pure-css</a>, using only CSS and <a target='_blank' href='https://github.com/HDeiro/efecss'>efecss</a> that contains some utilitaries in JavaScript."
+			"description": "EFECSS is a library developed to make it easier to use CSS animations. There are two versions; <a target='_blank' href='https://github.com/HDeiro/efecss-pure-css'>efecss-pure-css</a>, which uses only CSS and <a target='_blank' href='https://github.com/HDeiro/efecss'>efecss</a> that includes JavaScript."
 		},
 		{
 			"title": "Weskit",
 			"tags": ["Framework"],
-			"description": "The Web Starter Kit (Weskit) is a tool developed to make the process of landing page creation easier. Currently the Weskit is available in <a target='_blank' href='https://github.com/hdeiro/weskit'>Github</a>."
+			"description": "The Web Starter Kit (Weskit) was developed to easily create  landing pages. Currently the Weskit is available in <a target='_blank' href='https://github.com/hdeiro/weskit'>Github</a>."
 		},
 		{
 			"title": "Ericsson Revenue Manager",
 			"tags": ["Integration System"],
-			"description": "During my staying at \"Ericsson Inovação S. A.\", a subsidiary of Ericsson, I've been part of the development team of some modules of the Revenue Manager Project. <strong>In january of 2019 I've traveled to Kiev, in Ukraine, to provide on site support about the integration of the modules in which I've worked</strong>"
+			"description": "During my time at \"Ericsson Inovação S. A.\", a subsidiary of Ericsson, I was part of the development team for the Revenue Manager Project. <strong>In January of 2019 I traveled to Kiev, Ukraine, to provide on-site support for  the integration of the modules I worked on</strong>."
 		},
 		{
 			"title": "Congresso de Metodologia do Ensino de Línguas (CoMEL)",
 			"tags": ["Landing Page"],
-			"description": "I've developed a Landing Page for the first and second Congress of Language Teaching Congress, organized by the Federal Institute of Bahia and other important institutions of Brazil"
+			"description": "I developed a landing page for the first and second Congress of Language Education, organized by the Federal Institute of Bahia and other notable institutions in Brazil."
 		},
 		{
 			"title": "Le Parc",
 			"tags": ["App Android", "App IOS", "Sistema Web"],
-			"description": "The Le Parc application has several features for residents of the condominium. From visitor control to monitoring information, events and much more! The platform has been developed during the time I've worked at IWWA and it's available in <a target='_blank' href='https://play.google.com/store/apps/details?id=br.com.leparcssa&hl=pt_BR'>Google Play</a> and <a target='blank' href='https://apps.apple.com/br/app/le-parc-ssa/id1159763443'>App Store</a>"
+			"description": "The Le Parc application was developed for residents of a condominium complex. Features included visitor control, monitoring information, events and more. I developed the application while I worked at IWWA and it is currently available in the <a target='_blank' href='https://play.google.com/store/apps/details?id=br.com.leparcssa&hl=pt_BR'>Google Play</a> and <a target='blank' href='https://apps.apple.com/br/app/le-parc-ssa/id1159763443'>Apple App Store</a>"
 		},
 		{
 			"title": "Gestores VXCase",
 			"tags": ["App Android", "App IOS"],
-			"description": "The app \"Gestores VXCase\" has been developed during the time I've worked at VXCase. It has several features to make the work easier for the managers of the company. Considering it's an internal app, it's not available at Google Play Store or App Store."
+			"description": "I developed the \"Gestores VXCase\" application  while I worked at VXCase. It has several features  to make project and people management more efficient for the managers at the company. Since it was built to serve  an internal corporate user base, it is not available at the Google Play Store or Apple App Store."
 		},
 		{
 			"title": "AuraBrasil",
-			"tags": ["App Android", "App IOS"],
-			"description": "The \"AuraBrasil\" app allows users to see all machinery catalog of the company and also provide some information of their construction in order to find the most appropriate machine to help on that. It has been developed during the time I've worked at IWWA and it's available in the <a target='blank' href='https://play.google.com/store/apps/details?id=com.aurabrasil.app&hl=pt_BR'>Google Play</a> and <a target='blank' href='https://apps.apple.com/br/app/aurabrasil/id1108525914'>App Store</a> "
+			"tags": ["App Android", "App IOS'"],
+			"description": "The \"AuraBrasil application allows users to see the catalog of all machinery available to purchase. It also provides helpful information on construction work to assist users in finding the most appropriate tool. I developed this application while I worked at IWWA and it is available in the <a target='blank' href='https://play.google.com/store/apps/details?id=com.aurabrasil.app&hl=pt_BR'>Google Play</a> and <a target='blank' href='https://apps.apple.com/br/app/aurabrasil/id1108525914'>Apple App Store</a> "
 		},
 		{
 			"title": "EducGames",
 			"tags": ["Landing Page"],
-			"description": "It has been a Landing Page developed to the project EducGames of the Federal Institute of Bahia (IFBA), that aims to gamify the learning."
+			"description": "I developed the landing page for  project EducGames, sponsored by the Federal Institute of Bahia (IFBA), which aimed to enhance learning through gamification."
 		}
 	]
 }
