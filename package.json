@@ -33,7 +33,7 @@
 	},
 	"homepage": "https://github.com/HDeiro/weskit#readme",
 	"devDependencies": {
-		"browser-sync": "^2.26.12",
+		"browser-sync": "^2.26.14",
 		"concat-glob-cli": "^0.1.0",
 		"concurrently": "^5.3.0",
 		"copy-assets": "^1.0.2",
