@@ -6,6 +6,10 @@
 }
 
 @media print {
+	.container, body {
+		width: 100vw !important;
+	}
+
 	#print {
 		display: none;
 	}
@@ -17,20 +21,6 @@ body {
 	&, *, * * {
 		-webkit-print-color-adjust: exact;
 		font-family: $font-family-1;
-	}
-
-	&::before {
-		content: " ";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		z-index: -1;
-		left: 0;
-		right: 0;
-		background-image: url(./images/bg-cv.jpg);
-		background-size: cover;
-		width: 100vw;
-		min-height: 100vh;
 	}
 
 	#print {
@@ -62,6 +52,8 @@ body {
 
 	.container {
 		padding: 16px;
+		width: var(--width);
+		max-width: 100vw;
 	}
 
 	.contacts {
@@ -69,7 +61,7 @@ body {
 		align-items: center;
 		justify-content: flex-start;
 		flex-wrap: wrap;
-		width: 400px;
+		max-width: 400px;
 
 		.contact {
 			width: 170px;
@@ -134,13 +126,11 @@ body {
 			.left {
 				width: 100%;
 				padding-right: 0;
-				min-width: 500px;
 			}
 
 			.right {
 				padding-left: 0;
 				width: 100%;
-				min-width: 500px;
 			}
 		}
 	}
@@ -196,7 +186,7 @@ body {
 	.languages-wrapper {
 		display: flex;
 		align-items: flex-start;
-		justify-content: space-between;
+		justify-content: flex-start;
 		width: 100%;
 	}
 
@@ -214,8 +204,9 @@ body {
 
 	.box {
 		border: 1px solid $color-1;
-		width: calc(50% - 4px);
+		width: calc(45% - 4px);
 		border-radius: 4px;
+		margin-right: 8px;
 		padding: 6px;
 
 		&-title {

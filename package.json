@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "",
 	"scripts": {
-		"start": "npm run dev:concat",
+		"start": "npm run dev:no-concat",
 		"dev:concat": "concurrently \"npm run copy:assets\" \"npm run styles:watch\" \"npm run html:watch\" \"npm run scripts:watch\" \"npm run server\"",
 		"dev:no-concat": "concurrently \"npm run server\" \"npm run styles:watch\" \"npm run html:watch\" \"npm run scripts:watch:no-concat\"",
 		"server": "browser-sync start --server 'dist' --files 'dist'",

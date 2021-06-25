@@ -3,6 +3,10 @@ const $ = document.querySelector.bind(document);
 window.onload = () => {
 	this.loadAsyncCSS();
 	this.loadText();
+
+	const root = document.querySelector(':root');
+	root.style.setProperty('--width', innerWidth + "px");
+	root.style.setProperty('--height', innerHeight + "px");
 }
 
 $('#print').addEventListener('click', () => {
@@ -132,8 +136,6 @@ function loadText() {
 				node.innerHTML = skill;
 				othersElement.appendChild(node);
 			});
-
-			console.log(work);
 		})
 }
 
