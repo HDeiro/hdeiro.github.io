@@ -118,7 +118,6 @@ body {
 
 		.left, .right {
 			width: 50%;
-			min-width: 500px;
  		}
 
 		.left {
@@ -131,18 +130,19 @@ body {
 		}
 
 
-		@media all and (max-width: 1034px) {
+		@media screen and (max-width: 1034px) {
 			.left {
 				width: 100%;
 				padding-right: 0;
+				min-width: 500px;
 			}
 
 			.right {
 				padding-left: 0;
 				width: 100%;
+				min-width: 500px;
 			}
 		}
-
 	}
 
 	.section {

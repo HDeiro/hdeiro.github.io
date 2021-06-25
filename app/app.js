@@ -51,7 +51,7 @@ function loadText() {
 }
 
 function loadRandomTheme() {
-	const options = ['#000', '#0077b5', '#25d366', '#ea4335', '#f48924'];
+	const options = ['#555', '#0077b5'];
 	const index = Math.floor(Math.random() * options.length);
 	document.documentElement.style.setProperty('--theme-color', options[index]);
 }

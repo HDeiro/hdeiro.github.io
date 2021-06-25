@@ -20,7 +20,7 @@
 		"copy:assets": "copy-assets app dist --exts=.json,.png,.jpg,.gif,.txt",
 		"build:all": "rimraf ./dist/* && npm-run-all -p html:build styles:build",
 		"inline:assets": "html-inline -i ./dist/index-pre-inliner.html -o ./dist/index.html --ignore-images --ignore-links && rimraf dist/index-pre-inliner.html dist/styles.css",
-		"build:prod:concat": "npm-run-all -s build:all copy:assets scripts:concat scripts:uglify inline:assets"
+		"build:prod:concat": "npm-run-all -s build:all copy:assets scripts:copy scripts:uglify"
 	},
 	"repository": {
 		"type": "git",

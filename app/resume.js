@@ -5,7 +5,7 @@ window.onload = () => {
 	this.loadText();
 }
 
-$('#print').addEventListener('click', evt => {
+$('#print').addEventListener('click', () => {
 	window.print();
 })
 
