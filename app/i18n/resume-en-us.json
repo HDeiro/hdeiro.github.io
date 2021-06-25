@@ -3,7 +3,7 @@
 		{
 			"company": "MURAL",
 			"link": "https://www.mural.co/",
-			"description": "I'm working as an engineer for the Platform Core API of Mural, most specifically in the building of the new Webhooks API.",
+			"description": "I work as an engineer for the Platform Core API at Mural, most specifically in building the new Webhooks API.",
 			"roles": [
 				"Senior Software Engineer (Jun/2021 - Now)"
 			]
@@ -11,7 +11,7 @@
 		{
 			"company": "WEX",
 			"link": "https://www.wexinc.com/",
-			"description": "I have worked on the WEX EDGE product, which is focused on providing purchase and payment solutions for hotels, fuel, tires and orther fleet relevant products and services.",
+			"description": "I worked on a product called WEX EDGE, which focuses on providing fleet businesses with purchase and payment solutions for hotels, fuel, tires and other fleet-relevant products and services.",
 			"roles": [
 				"Tech Leader (Apr/2021 - Jun/2021)",
 				"Specialist Software Engineer (Mar/2021 - Jun/2021)",
@@ -21,7 +21,7 @@
 		{
 			"company": "Ericsson Inovação S.A. (EISA)",
 			"link": "https://www.linkedin.com/company/eisa-tecnologia/?originalSubdomain=br",
-			"description": "During my time at EISA, a subsidiary of Ericsson, I had the opportunity to work with huge telecomunication softwares for customers from Brazil and Ukraine. In January of 2019 I had the opportunity to trave to Kyiv, Ukraine to provide on site support to our customers.",
+			"description": "During my time at EISA, a subsidiary of Ericsson, I had the opportunity to work on huge telecommunication software solutions for customers in  Brazil and the Ukraine. In January of 2019 I had the opportunity to trave to Kyiv, Ukraine to provide on-site support for our customers.",
 			"roles": [
 				"Software Engineer (Jul/2018 - Jun/2019)",
 				"Software Development Technician III (May/2018 - Jun/2018)"
@@ -30,7 +30,7 @@
 		{
 			"company": "VXCase",
 			"link": "https://www.vxcase.com.br/",
-			"description": "During my staying at VXCase I have worked in the development of a mobile app used by the managers to control the business and I also acted on the development of the internal ERP of the company",
+			"description": "At VXCase, I developed a mobile app used by managers to control and organize their business andan internal ERP for the company",
 			"roles": [
 				"Project Analyst II (Jun/2017 - Apr/2018)"
 			]
@@ -74,19 +74,19 @@
 	"accomplishments": [
 		{
 			"title": "Ericsson on site support in Kyiv - Ukraine",
-			"details": "During 2019 I had the opportunity to be in Kyiv providing on site support to the Ericsson Team abou the systems me and my team worked at EISA."
+			"details": "In 2019, I had the opportunity to be in Kyiv to provide on-site support to the Ericsson Team regarding the systems my team and I had developed."
 		},
 		{
 			"title": "2nd Place in an innovation contest",
-			"details": "IFBA organizes a contest called \"Uma ideia na cabeça uma inovação na mão\" yearly. In 2016 had me as the second place with a proposal of using the Kinect API to improve the teaching-learning process of biology classes for the DNA studies."
+			"details": "IFBA organizes an annual contest called \"Uma ideia na cabeça uma inovação na mão\". In 2016, I won second place with a proposal to use Kinect API to improve the teaching and learning process for  biology classes, specifically DNA studies."
 		},
 		{
 			"title": "My code became example in a compiler!",
-			"details": "That was probably the first achievement of my carrer. I made a keyboard-based paint editor in Pascal on 2012. It has been accepted in the brazilian compiler PascalZim as the \"EditorHugo.pas\" example!"
+			"details": "That was probably the first achievement of my career. I made a keyboard-based paint editor in Pascal in 2012. It was accepted in the Brazilian compiler PascalZim as the \"EditorHugo.pas\" example!"
 		},
 		{
 			"title": "Presentation of talks/workshops/lives",
-			"details": "I really enjoy sharing my knowledge and learn more at the same time! So, I have already presented in many events like SEMCOMP, SNCT, Linguagil, Love Bits Lives, Software Freedom Day and others."
+			"details": "I enjoy sharing my knowledge and learning! I have had the opportunity to present at many events like SEMCOMP, SNCT, Linguagil, Love Bits Lives, Software Freedom Day and others."
 		}
 	],
 	"tech": [
