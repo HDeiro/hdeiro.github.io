@@ -111,6 +111,11 @@
 			"color": "#fff"
 		},
 		{
+			"name": "TypeScript",
+			"background": "#2F74C0",
+			"color": "#fff"
+		},
+		{
 			"name": "Angular",
 			"background": "#D6002F",
 			"color": "#fff"
