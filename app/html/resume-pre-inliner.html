@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=5">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Browser's header background color -->
+    <meta name="theme-color" content="#4C3F4B">
+    <meta name="msapplication-navbutton-color" content="#4C3F4B">
+
+    <!-- Site info -->
+    <meta name="description" content="Hugo Deiró, Analista e Desenvolvedor de Sistemas">
+    <meta name="keywords" content="Hugo Deiró, Analista e Desenvolvedor de Sistemas">
+    <meta name="author" content="Hugo Deiró">
+    <meta name="copyright" content="Hugo Deiró">
+
+    <title>Hugo Deiró, Software Engineer</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png?v1"/>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap">
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap">
+
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="preconnect" href="/non-critical.css">
+	<link rel="dns-prefetch" href="/non-critical.css">
+
+	<link rel="preconnect" as="fetch" crossorigin="crossorigin" href="i18n/resume-en-us.json">
+	<link rel="dns-prefetch" as="fetch" crossorigin="crossorigin" href="i18n/resume-en-us.json">
+
+	<link rel="preconnect" as="fetch" crossorigin="crossorigin" href="/images/bg-cv.jpg">
+	<link rel="dns-prefetch" as="fetch" crossorigin="crossorigin" href="/images/bg-cv.jpg">
+
+	<link rel="stylesheet" href="resume.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="left-side">
+				<div class="name">Hugo Deiró</div>
+				<div class="role">Software Engineer</div>
+			</div>
+			<div class="right-side">
+				<div class="contacts">
+					<div class="contact">
+						<a target="_blank" class="link" href="https://github.com/hdeiro">
+							<div class="fa fa-github contact-icon"></div>
+							/hdeiro
+						</a>
+					</div>
+					<div class="contact">
+						<a target="_blank" class="link" href="https://linkedin.com/in/hdeiro">
+							<div class="fa fa-linkedin contact-icon"></div>
+							/hdeiro
+						</a>
+					</div>
+					<div class="contact">
+						<a target="_blank" class="link" href="https://api.whatsapp.com/send?phone=5571991529968">
+							<div class="fa fa-whatsapp contact-icon"></div>
+							+55 (71) 99152-9968
+						</a>
+					</div>
+					<div class="contact">
+						<a target="_blank" class="link" href="mailto:hugodeiro.com">
+							<div class="fa fa-envelope contact-icon"></div>
+							hugodeiro@gmail.com
+						</a>
+					</div>
+					<div class="contact">
+						<a target="_blank" class="link" href="https://hugodeiro.com">
+							<div class="fa fa-external-link contact-icon"></div>
+							hugodeiro.com
+						</a>
+					</div>
+				</div>
+				<button id="print">
+					<div class="fa fa-print"></div>
+					Print or download me!
+				</button>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="left">
+				<section class="section work">
+					<div class="section-title">
+						<div class="fa fa-briefcase"></div>
+						Professional Experience
+					</div>
+
+					<div id="work"></div>
+
+					<div class="disclaimer">Only the most recent companies that I have worked are here</div>
+				</section>
+
+				<section class="section techs">
+					<div class="section-title">
+						<div class="fa fa-code"></div>
+						Tech Skills
+					</div>
+					<div class="tech-skills pillset" id="tech"></div>
+					<div class="disclaimer">I know other technologies, but I just added my favourite ones :)</div>
+				</section>
+
+				<section class="section certifications">
+					<div class="section-title">
+						<div class="fa fa-certificate"></div>
+						Certifications
+					</div>
+					<div class="certifications-wrapper" id="certifications"></div>
+				</section>
+			</div>
+
+			<div class="right">
+				<section class="section education" id="education">
+					<div class="section-title">
+						<div class="fa fa-graduation-cap"></div>
+						Education
+					</div>
+				</section>
+
+				<section class="section languages">
+					<div class="section-title">
+						<div class="fa fa-language"></div>
+						Language Skills
+					</div>
+					<div class="languages-wrapper" id="languages"></div>
+				</section>
+
+				<section class="section accomplishments">
+					<div class="section-title">
+						<div class="fa fa-bullseye"></div>
+						Accomplishments
+					</div>
+					<div class="accomplishments-wrapper" id="accomplishments"></div>
+					<div class="disclaimer">There are other accomplishments, but they're just not mentioned here</div>
+				</section>
+
+				<section class="section others">
+					<div class="section-title">
+						<div class="fa fa-random"></div>
+						Main Soft Skills and Characteristics
+					</div>
+					<div class="others-wrapper pillset" id="others"></div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<script src="resume.js"></script>
+</body>
+</html>

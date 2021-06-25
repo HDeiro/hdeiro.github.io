@@ -1,0 +1,193 @@
+{
+	"work": [
+		{
+			"company": "MURAL",
+			"link": "https://www.mural.co/",
+			"description": "I'm working as an engineer for the Platform Core API of Mural, most specifically in the building of the new Webhooks API.",
+			"roles": [
+				"Senior Software Engineer (Jun/2021 - Now)"
+			]
+		},
+		{
+			"company": "WEX",
+			"link": "https://www.wexinc.com/",
+			"description": "I have worked on the WEX EDGE product, which is focused on providing purchase and payment solutions for hotels, fuel, tires and orther fleet relevant products and services.",
+			"roles": [
+				"Tech Leader (Apr/2021 - Jun/2021)",
+				"Specialist Software Engineer (Mar/2021 - Jun/2021)",
+				"Senior Software Engineer (Jun/2019 - Mar/2021)"
+			]
+		},
+		{
+			"company": "Ericsson Inovação S.A. (EISA)",
+			"link": "https://www.linkedin.com/company/eisa-tecnologia/?originalSubdomain=br",
+			"description": "During my time at EISA, a subsidiary of Ericsson, I had the opportunity to work with huge telecomunication softwares for customers from Brazil and Ukraine. In January of 2019 I had the opportunity to trave to Kyiv, Ukraine to provide on site support to our customers.",
+			"roles": [
+				"Software Engineer (Jul/2018 - Jun/2019)",
+				"Software Development Technician III (May/2018 - Jun/2018)"
+			]
+		},
+		{
+			"company": "VXCase",
+			"link": "https://www.vxcase.com.br/",
+			"description": "During my staying at VXCase I have worked in the development of a mobile app used by the managers to control the business and I also acted on the development of the internal ERP of the company",
+			"roles": [
+				"Project Analyst II (Jun/2017 - Apr/2018)"
+			]
+		}
+	],
+	"education": [
+		{
+			"link": "https://ppgesp.ifba.edu.br/Mestrado-%E2%80%92-Apresenta%C3%A7%C3%A3o",
+			"title": "Master on Systems and Products Engineering",
+			"details": "Federal Institute of Bahia <i>campus</i> Salvador (IFBA), 2019 - Now"
+		},
+		{
+			"link": "https://portal.ifba.edu.br/salvador",
+			"title": "System Analisys and Development",
+			"details": "Federal Institute of Bahia  <i>campus</i> Salvador (IFBA), 2014 - 2018"
+		},
+		{
+			"link": "https://portal.ifba.edu.br/camacari",
+			"title": "Software Development Technicial Integrated Course",
+			"details": "Federal Institute of Bahia  <i>campus</i> Camaçari (IFBA), 2011 - 2015"
+		}
+	],
+	"languages": [
+		{
+			"language": "Portuguese (Native)",
+			"stars": {
+				"speak": 5,
+				"read": 5,
+				"write": 5
+			}
+		},
+		{
+			"language": "English",
+			"stars": {
+				"speak": 5,
+				"read": 5,
+				"write": 5
+			}
+		}
+	],
+	"accomplishments": [
+		{
+			"title": "Ericsson on site support in Kyiv - Ukraine",
+			"details": "During 2019 I had the opportunity to be in Kyiv providing on site support to the Ericsson Team abou the systems me and my team worked at EISA."
+		},
+		{
+			"title": "2nd Place in an innovation contest",
+			"details": "IFBA organizes a contest called \"Uma ideia na cabeça uma inovação na mão\" yearly. In 2016 had me as the second place with a proposal of using the Kinect API to improve the teaching-learning process of biology classes for the DNA studies."
+		},
+		{
+			"title": "My code became example in a compiler!",
+			"details": "That was probably the first achievement of my carrer. I made a keyboard-based paint editor in Pascal on 2012. It has been accepted in the brazilian compiler PascalZim as the \"EditorHugo.pas\" example!"
+		},
+		{
+			"title": "Presentation of talks/workshops/lives",
+			"details": "I really enjoy sharing my knowledge and learn more at the same time! So, I have already presented in many events like SEMCOMP, SNCT, Linguagil, Love Bits Lives, Software Freedom Day and others."
+		}
+	],
+	"tech": [
+		{
+			"name": "HTML",
+			"background": "#e34f26",
+			"color": "#fff"
+		},
+		{
+			"name": "CSS",
+			"background": "#128BC4",
+			"color": "#fff"
+		},
+		{
+			"name": "Sass",
+			"background": "#C86193",
+			"color": "#fff"
+		},
+		{
+			"name": "JavaScript",
+			"background": "#EFD81D",
+			"color": "#fff"
+		},
+		{
+			"name": "Angular",
+			"background": "#D6002F",
+			"color": "#fff"
+		},
+		{
+			"name": "Git",
+			"background": "#E84E31",
+			"color": "#fff"
+		},
+		{
+			"name": "Design Patterns",
+			"background": "default",
+			"color": "default"
+		},
+		{
+			"name": "Scrum",
+			"background": "#91B0CD",
+			"color": "#fff"
+		},
+		{
+			"name": "Node JS",
+			"background": "#4CA658",
+			"color": "#fff"
+		},
+		{
+			"name": "MongoDB",
+			"background": "#1B993A",
+			"color": "#fff"
+		},
+		{
+			"name": "Prog. Web Apps",
+			"background": "#570FC2",
+			"color": "#fff"
+		},
+		{
+			"name": "Apache Kafka",
+			"background": "#0B0B0B",
+			"color": "#fff"
+		},
+		{
+			"name": "SQL",
+			"background": "#006EC0",
+			"color": "#fff"
+		},
+		{
+			"name": "Socket IO",
+			"background": "#010101",
+			"color": "#fff"
+		}
+	],
+	"certifications": [
+		{
+			"title": "Google Analytics Individual Qualification",
+			"link": "https://www.dropbox.com/s/3wgejvqy6zo80f4/Google%20Analytics%20Individual%20Qualification.pdf?dl=0",
+			"details": "Google, 2020"
+		},
+		{
+			"title": "Certified Lean Inception Facilitatior (CLF)",
+			"link": "https://www.dropbox.com/s/8zvixsgoqcp9vo0/Lean%20Inception%20Facilitator%20-%20CLF.pdf?dl=0",
+			"details": "Caroli.org, 2019"
+		},
+		{
+			"title": "Scrum Foundation Professional Certificate (SFPC)",
+			"link": "https://www.dropbox.com/s/0xigvfsf49xhc8h/Scrum%20Foundation%20Professional%20Certificate%20-%20SFPC.pdf?dl=0",
+			"details": "CertiProf, 2019"
+		}
+	],
+	"others": [
+		"Interpersonality",
+		"Proactivity",
+		"Propositional",
+		"Teamwork",
+		"Organized",
+		"Creative",
+		"Eloquent",
+		"Teaching",
+		"Leadership",
+		"Bad Jokes"
+	]
+}
