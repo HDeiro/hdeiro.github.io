@@ -5,7 +5,7 @@
 			"link": "https://www.mural.co/",
 			"description": "I work as an engineer for the Platform Core API at Mural, most specifically in building the new Webhooks API.",
 			"roles": [
-				"Senior Software Engineer (Jun/2021 - Now)"
+				"Senior Software Engineer (Jun/2021 - Current)"
 			]
 		},
 		{
@@ -21,7 +21,7 @@
 		{
 			"company": "Ericsson Inovação S.A. (EISA)",
 			"link": "https://www.linkedin.com/company/eisa-tecnologia/?originalSubdomain=br",
-			"description": "During my time at EISA, a subsidiary of Ericsson, I had the opportunity to work on huge telecommunication software solutions for customers in  Brazil and the Ukraine. In January of 2019 I had the opportunity to trave to Kyiv, Ukraine to provide on-site support for our customers.",
+			"description": "During my time at EISA, a subsidiary of Ericsson, I had the opportunity to work on large telecommunication software solutions for customers in Brazil and the Ukraine. In January of 2019 I had the opportunity to travel to Kyiv, Ukraine to provide on-site support for our customers.",
 			"roles": [
 				"Software Engineer (Jul/2018 - Jun/2019)",
 				"Software Development Technician III (May/2018 - Jun/2018)"
@@ -40,7 +40,7 @@
 		{
 			"link": "https://ppgesp.ifba.edu.br/Mestrado-%E2%80%92-Apresenta%C3%A7%C3%A3o",
 			"title": "Master on Systems and Products Engineering",
-			"details": "Federal Institute of Bahia <i>campus</i> Salvador (IFBA), 2019 - Now"
+			"details": "Federal Institute of Bahia <i>campus</i> Salvador (IFBA), 2019 - Current"
 		},
 		{
 			"link": "https://portal.ifba.edu.br/salvador",
@@ -74,15 +74,15 @@
 	"accomplishments": [
 		{
 			"title": "Ericsson on site support in Kyiv - Ukraine",
-			"details": "In 2019, I had the opportunity to be in Kyiv to provide on-site support to the Ericsson Team regarding the systems my team and I had developed."
+			"details": "In 2019, I had the opportunity to travel to Kyiv to provide on-site support for the systems my team and I developed, to the Ericsson Team."
 		},
 		{
 			"title": "2nd Place in an innovation contest",
-			"details": "IFBA organizes an annual contest called \"Uma ideia na cabeça uma inovação na mão\". In 2016, I won second place with a proposal to use Kinect API to improve the teaching and learning process for  biology classes, specifically DNA studies."
+			"details": "IFBA organizes an annual contest called \"Uma ideia na cabeça uma inovação na mão\". In 2016, I won second place with a proposal to use Kinect API to improve the teaching and learning process for biology classes, specifically DNA studies."
 		},
 		{
 			"title": "My code became example in a compiler!",
-			"details": "That was probably the first achievement of my career. I made a keyboard-based paint editor in Pascal in 2012. It was accepted in the Brazilian compiler PascalZim as the \"EditorHugo.pas\" example!"
+			"details": "That was probably the first achievement of my career. I made a keyboard-based paint editor in Pascal in 2012. It was accepted by the Brazilian compiler PascalZim as the \"EditorHugo.pas\" example!"
 		},
 		{
 			"title": "Presentation of talks/workshops/lives",
